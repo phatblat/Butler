@@ -24,14 +24,14 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/git/Butler'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'git' => 'ben@octop.ad' }
+  s.author           = { 'Ben Chatelain' => 'ben@octop.ad' }
   s.source           = { :git => 'https://github.com/git/Butler.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/phatblat'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Butler/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'Butler' => ['Butler/Assets/*.png']
   # }

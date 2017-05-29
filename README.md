@@ -22,7 +22,7 @@ pod "Butler"
 
 ## Author
 
-git, ben@octop.ad
+Ben Chatelain, ben@octop.ad
 
 ## License
 
