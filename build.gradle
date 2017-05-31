@@ -2,3 +2,7 @@
  * build.gradle
  * Butler
  */
+
+task spmDescribe(type: Exec) {
+    commandLine 'swift package describe'.tokenize()
+}
