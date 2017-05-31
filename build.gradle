@@ -16,10 +16,6 @@ task spm {
 
 /* Bundler */
 
-// task bundleConfig(type: Exec) {
-//     commandLine 'bundle config --local clean true && bundle config --local path .rubygems && bundle config --local bin bin && bundle config --local jobs 8'.tokenize()
-// }
-
 task bundleInstall(type: Exec) {
     commandLine 'bundle install'.tokenize()
 }
