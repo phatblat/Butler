@@ -3,6 +3,17 @@
  * Butler
  */
 
+/* Top-Level Tasks for CI */
+
+task cocoapods {
+    dependsOn 'podLibLint'
+}
+
+task spm {
+    dependsOn 'spmDescribe'
+    dependsOn 'spmDependencies'
+}
+
 /* Bundler */
 
 // task bundleConfig(type: Exec) {
