@@ -6,3 +6,7 @@
 task spmDescribe(type: Exec) {
     commandLine 'swift package describe'.tokenize()
 }
+
+task spmDependencies(type: Exec) {
+    commandLine 'swift package show-dependencies'.tokenize()
+}
