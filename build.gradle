@@ -3,6 +3,29 @@
  * Butler
  */
 
+/* Bundler */
+
+// task bundleConfig(type: Exec) {
+//     commandLine 'bundle config --local clean true && bundle config --local path .rubygems && bundle config --local bin bin && bundle config --local jobs 8'.tokenize()
+// }
+
+task bundleInstall(type: Exec) {
+    commandLine 'bundle install'.tokenize()
+}
+
+task bundleInstallQuiet(type: Exec) {
+    commandLine 'bundle install --quiet'.tokenize()
+}
+
+/* CocoaPods */
+
+task podLibLint(type: Exec) {
+    dependsOn bundleInstallQuiet
+    commandLine 'bundle exec pod lib lint'.tokenize()
+}
+
+/* Swift Package Manager */
+
 task spmDescribe(type: Exec) {
     commandLine 'swift package describe'.tokenize()
 }
