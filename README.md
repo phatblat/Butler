@@ -1,24 +1,17 @@
 # Butler
 
-Swift bindings for the Jenkins API.
-
-[![CI Status](http://img.shields.io/travis/git/Butler.svg?style=flat)](https://travis-ci.org/git/Butler)
-[![Version](https://img.shields.io/cocoapods/v/Butler.svg?style=flat)](http://cocoapods.org/pods/Butler)
-[![License](https://img.shields.io/cocoapods/l/Butler.svg?style=flat)](http://cocoapods.org/pods/Butler)
-[![Platform](https://img.shields.io/cocoapods/p/Butler.svg?style=flat)](http://cocoapods.org/pods/Butler)
-
-Swift framework for accessing the Jenkins
+Swift bindings for the Jenkins
 [remote access API](https://wiki.jenkins-ci.org/display/JENKINS/Remote+access+API).
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Run `pod try Butler` to build and open the [example project](Example).
 
 ------
 
 ## Requirements
 
-## Installation
+## Installation ➡️🔨
 
 ### Pick Your Poison ☠️
 
