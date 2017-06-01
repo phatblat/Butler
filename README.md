@@ -63,4 +63,4 @@ Ben Chatelain, ben@octop.ad
 
 ## License
 
-Butler is available under the MIT license. See the LICENSE file for more info.
+Butler is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
