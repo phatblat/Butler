@@ -12,6 +12,8 @@ task cocoapods {
 task spm {
     dependsOn 'spmDescribe'
     dependsOn 'spmDependencies'
+    dependsOn 'swiftBuild'
+    dependsOn 'swiftTest'
 }
 
 /* Bundler */
@@ -39,4 +41,12 @@ task spmDescribe(type: Exec) {
 
 task spmDependencies(type: Exec) {
     commandLine 'swift package show-dependencies'.tokenize()
+}
+
+task swiftBuild(type: Exec) {
+    commandLine 'swift build'.tokenize()
+}
+
+task swiftTest(type: Exec) {
+    commandLine 'swift test'.tokenize()
 }
