@@ -16,6 +16,11 @@ task spm {
     dependsOn 'swiftTest'
 }
 
+task buildAll {
+    dependsOn cocoapods
+    dependsOn spm
+}
+
 /* Bundler */
 
 task bundleInstall(type: Exec) {
