@@ -7,6 +7,8 @@ let butler = Package(
     swiftLanguageVersions: [3]
 )
 
-butler.testDependencies = [
-    .Package(url: "https://github.com/Quick/Quick.git", majorVersion: 1)
-]
+// testDependencies temporarily removed
+// https://stackoverflow.com/questions/41401753/test-only-dependencies-when-using-the-swift-package-manager#answer-41407032
+// butler.testDependencies = [
+//     .Package(url: "https://github.com/Quick/Quick.git", majorVersion: 1)
+// ]
