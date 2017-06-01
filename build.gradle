@@ -3,24 +3,6 @@
  * Butler
  */
 
-/* Top-Level Tasks for CI */
-
-task cocoapods {
-    dependsOn 'podLibLint'
-}
-
-task spm {
-    dependsOn 'spmDescribe'
-    dependsOn 'spmDependencies'
-    dependsOn 'swiftBuild'
-    dependsOn 'swiftTest'
-}
-
-task buildAll {
-    dependsOn cocoapods
-    dependsOn spm
-}
-
 /* Bundler */
 
 task bundleInstall(type: Exec) {
@@ -59,4 +41,22 @@ task swiftBuild(type: Exec) {
 
 task swiftTest(type: Exec) {
     commandLine 'swift test'.tokenize()
+}
+
+/* Top-Level Tasks for CI */
+
+task cocoapods {
+    dependsOn podLibLint
+}
+
+task spm {
+    dependsOn spmDescribe
+    dependsOn spmDependencies
+    dependsOn swiftBuild
+    dependsOn swiftTest
+}
+
+task buildAll {
+    dependsOn cocoapods
+    dependsOn spm
 }
