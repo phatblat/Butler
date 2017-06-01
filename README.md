@@ -15,32 +15,45 @@ Run `pod try Butler` to build and open the [example project](Example).
 
 ### Pick Your Poison ☠️
 
-1. CocoaPods
-1. Swift Package Manager
-1. Carthage
-1. CocoaSeeds
+1. [CocoaPods](#cocoapods)
+1. [Swift Package Manager](#swift-package-manager)
+1. [Carthage](#carthage)
+1. [CocoaSeeds](#cocoaseeds)
 
-#### CocoaPods
+#### [CocoaPods](https://cocoapods.org)
 
-https://cocoapods.org
+> Until this framework is published to trunk, you will need to include the
+[`git`](https://guides.cocoapods.org/syntax/podfile.html#pod) URL.
 
 Add the following line to a target in your `Podfile`:
 
 ```ruby
-pod "Butler"
+target 'YourApp' do
+  pod 'Butler', git: 'https://github.com/phatblat/Butler.git'
+end
 ```
 
-#### Swift Package Manager
+#### [Swift Package Manager](https://swift.org/package-manager/)
 
-https://swift.org/package-manager/
+To use this library as a dependency for your own Swift package, add Butler as a
+dependency like in the following example:
 
-#### Carthage
+```swift
+let package = Package(
+    name: "YourPackage",
+    dependencies: [
+        .Package(url: "https://github.com/phatblat/Butler.git")
+    ],
+)
+```
 
-https://github.com/Carthage/Carthage
+#### [Carthage](https://github.com/Carthage/Carthage)
 
-#### CocoaSeeds
+- 🚧 Coming soon
 
-https://github.com/devxoul/CocoaSeeds
+#### [CocoaSeeds](https://github.com/devxoul/CocoaSeeds)
+
+- 🚧 Coming soon
 
 ------
 
@@ -50,4 +63,4 @@ Ben Chatelain, ben@octop.ad
 
 ## License
 
-Butler is available under the MIT license. See the LICENSE file for more info.
+Butler is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
