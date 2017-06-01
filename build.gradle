@@ -1,0 +1,57 @@
+/**
+ * build.gradle
+ * Butler
+ */
+
+/* Top-Level Tasks for CI */
+
+task cocoapods {
+    dependsOn 'podLibLint'
+}
+
+task spm {
+    dependsOn 'spmDescribe'
+    dependsOn 'spmDependencies'
+    dependsOn 'swiftBuild'
+    dependsOn 'swiftTest'
+}
+
+task buildAll {
+    dependsOn cocoapods
+    dependsOn spm
+}
+
+/* Bundler */
+
+task bundleInstall(type: Exec) {
+    commandLine 'bundle install'.tokenize()
+}
+
+task bundleInstallQuiet(type: Exec) {
+    commandLine 'bundle install --quiet'.tokenize()
+}
+
+/* CocoaPods */
+
+task podLibLint(type: Exec) {
+    dependsOn bundleInstallQuiet
+    commandLine 'bundle exec pod lib lint'.tokenize()
+}
+
+/* Swift Package Manager */
+
+task spmDescribe(type: Exec) {
+    commandLine 'swift package describe'.tokenize()
+}
+
+task spmDependencies(type: Exec) {
+    commandLine 'swift package show-dependencies'.tokenize()
+}
+
+task swiftBuild(type: Exec) {
+    commandLine 'swift build'.tokenize()
+}
+
+task swiftTest(type: Exec) {
+    commandLine 'swift test'.tokenize()
+}

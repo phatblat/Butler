@@ -1,0 +1,6 @@
+---
+BUNDLE_DISABLE_SHARED_GEMS: "true"
+BUNDLE_CLEAN: "true && bundle config --local path .rubygems && bundle config --local bin bin && bundle config --local jobs 8"
+BUNDLE_PATH: ".rubygems"
+BUNDLE_BIN: "bin"
+BUNDLE_JOBS: "8"
