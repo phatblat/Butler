@@ -16,6 +16,16 @@
 		OBJ_37 /* Butler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Butler.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F8640FEF1EE0A2970041E7E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_21;
+			remoteInfo = Butler;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		03611EB069CAD1C141A91C1D /* Pods_Butler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F584ABD337ABF6B01182BB /* Pods-ButlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButlerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ButlerTests/Pods-ButlerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -23,32 +33,36 @@
 		CE6A9B7346F066BE15B21428 /* Pods_ButlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F132AE8D8202A890EFFDA47A /* Pods-Butler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Butler/Pods-Butler.release.xcconfig"; sourceTree = "<group>"; };
 		F7F22CD9E5A82FCEE3586693 /* Pods-Butler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Butler/Pods-Butler.debug.xcconfig"; sourceTree = "<group>"; };
-		OBJ_10 /* User.swift */ = {isa = PBXFileReference; path = User.swift; sourceTree = "<group>"; };
-		OBJ_13 /* ButlerTests.swift */ = {isa = PBXFileReference; path = ButlerTests.swift; sourceTree = "<group>"; };
-		OBJ_14 /* bin */ = {isa = PBXFileReference; path = bin; sourceTree = SOURCE_ROOT; };
-		OBJ_15 /* Docs */ = {isa = PBXFileReference; path = Docs; sourceTree = SOURCE_ROOT; };
-		OBJ_16 /* Example */ = {isa = PBXFileReference; path = Example; sourceTree = SOURCE_ROOT; };
-		OBJ_17 /* gradle */ = {isa = PBXFileReference; path = gradle; sourceTree = SOURCE_ROOT; };
-		OBJ_19 /* Butler.framework */ = {isa = PBXFileReference; path = Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_20 /* ButlerTests.xctest */ = {isa = PBXFileReference; path = ButlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		OBJ_13 /* ButlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButlerTests.swift; sourceTree = "<group>"; };
+		OBJ_14 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = SOURCE_ROOT; };
+		OBJ_15 /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = SOURCE_ROOT; };
+		OBJ_16 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
+		OBJ_17 /* gradle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gradle; sourceTree = SOURCE_ROOT; };
+		OBJ_19 /* Butler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_20 /* ButlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ButlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_8 /* Butler.swift */ = {isa = PBXFileReference; path = Butler.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Jenkins.swift */ = {isa = PBXFileReference; path = Jenkins.swift; sourceTree = "<group>"; };
+		OBJ_8 /* Butler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butler.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Jenkins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jenkins.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		OBJ_29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
 			files = (
 				667E75F408208DC98C3C2697 /* Pods_Butler.framework in Frameworks */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		OBJ_36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
 			files = (
 				OBJ_37 /* Butler.framework in Frameworks */,
 				292992CDB051C1776117A9E5 /* Pods_ButlerTests.framework in Frameworks */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -79,7 +93,6 @@
 				OBJ_12 /* ButlerTests */,
 			);
 			name = Tests;
-			path = "";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_12 /* ButlerTests */ = {
@@ -98,7 +111,6 @@
 				OBJ_20 /* ButlerTests.xctest */,
 			);
 			name = Products;
-			path = "";
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		OBJ_5 = {
@@ -115,7 +127,6 @@
 				AD340B565221BE4B7FD99619 /* Pods */,
 				AD2FA3419684A33CA45CB59A /* Frameworks */,
 			);
-			path = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -125,7 +136,6 @@
 				OBJ_9 /* Jenkins.swift */,
 				OBJ_10 /* User.swift */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
@@ -187,7 +197,8 @@
 			);
 			mainGroup = OBJ_5;
 			productRefGroup = OBJ_18 /* Products */;
-			projectDirPath = .;
+			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				OBJ_21 /* Butler */,
 				OBJ_30 /* ButlerTests */,
@@ -276,17 +287,21 @@
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
 			files = (
 				OBJ_26 /* Butler.swift in Sources */,
 				OBJ_27 /* Jenkins.swift in Sources */,
 				OBJ_28 /* User.swift in Sources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		OBJ_34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
 			files = (
 				OBJ_35 /* ButlerTests.swift in Sources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -294,6 +309,7 @@
 		OBJ_38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_21 /* Butler */;
+			targetProxy = F8640FEF1EE0A2970041E7E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -309,7 +325,6 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Butler.xcodeproj/Butler_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Butler;
@@ -331,7 +346,6 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Butler.xcodeproj/Butler_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Butler;
@@ -376,7 +390,6 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Butler.xcodeproj/ButlerTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				TARGET_NAME = ButlerTests;
@@ -394,7 +407,6 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Butler.xcodeproj/ButlerTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				TARGET_NAME = ButlerTests;
