@@ -7,82 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		OBJ_100 /* Jenkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Jenkins.swift */; };
-		OBJ_101 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* User.swift */; };
-		OBJ_103 /* QuickSpecBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* QuickSpecBase.framework */; };
-		OBJ_104 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Quick.framework */; };
-		OBJ_112 /* ButlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* ButlerTests.swift */; };
-		OBJ_114 /* QuickSpecBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* QuickSpecBase.framework */; };
-		OBJ_115 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Quick.framework */; };
-		OBJ_116 /* Butler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Butler.framework */; };
-		OBJ_62 /* QuickSpecBase.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* QuickSpecBase.m */; };
-		OBJ_69 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Callsite.swift */; };
-		OBJ_70 /* ErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* ErrorUtility.swift */; };
-		OBJ_71 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Example.swift */; };
-		OBJ_72 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* ExampleGroup.swift */; };
-		OBJ_73 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ExampleMetadata.swift */; };
-		OBJ_74 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Filter.swift */; };
-		OBJ_75 /* NSBundle+CurrentTestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* NSBundle+CurrentTestBundle.swift */; };
-		OBJ_76 /* NSString+C99ExtendedIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* NSString+C99ExtendedIdentifier.swift */; };
-		OBJ_77 /* QuickMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* QuickMain.swift */; };
-		OBJ_78 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* QuickSelectedTestSuiteBuilder.swift */; };
-		OBJ_79 /* QuickSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* QuickSpec.swift */; };
-		OBJ_80 /* QuickTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* QuickTestSuite.swift */; };
-		OBJ_81 /* URL+FileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* URL+FileName.swift */; };
-		OBJ_82 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* World.swift */; };
-		OBJ_83 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Configuration.swift */; };
-		OBJ_84 /* QuickConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* QuickConfiguration.swift */; };
-		OBJ_85 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* DSL.swift */; };
-		OBJ_86 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* World+DSL.swift */; };
-		OBJ_87 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Closures.swift */; };
-		OBJ_88 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* ExampleHooks.swift */; };
-		OBJ_89 /* HooksPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* HooksPhase.swift */; };
-		OBJ_90 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* SuiteHooks.swift */; };
-		OBJ_92 /* QuickSpecBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* QuickSpecBase.framework */; };
-		OBJ_99 /* Butler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Butler.swift */; };
+		OBJ_26 /* Butler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Butler.swift */; };
+		OBJ_27 /* Jenkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Jenkins.swift */; };
+		OBJ_28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* User.swift */; };
+		OBJ_35 /* ButlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* ButlerTests.swift */; };
+		OBJ_37 /* Butler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Butler.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F8A5AE151EE0971B00B3897A /* PBXContainerItemProxy */ = {
+		F8A5AE1B1EE0A03400B3897A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_56;
-			remoteInfo = QuickSpecBase;
-		};
-		F8A5AE161EE0971B00B3897A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_56;
-			remoteInfo = QuickSpecBase;
-		};
-		F8A5AE171EE0971B00B3897A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_64;
-			remoteInfo = Quick;
-		};
-		F8A5AE181EE0971B00B3897A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_56;
-			remoteInfo = QuickSpecBase;
-		};
-		F8A5AE191EE0971B00B3897A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_64;
-			remoteInfo = Quick;
-		};
-		F8A5AE1A1EE0971B00B3897A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_94;
+			remoteGlobalIDString = OBJ_21;
 			remoteInfo = Butler;
 		};
 /* End PBXContainerItemProxy section */
@@ -94,72 +31,26 @@
 		OBJ_15 /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = SOURCE_ROOT; };
 		OBJ_16 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
 		OBJ_17 /* gradle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gradle; sourceTree = SOURCE_ROOT; };
-		OBJ_21 /* QuickSpecBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSpecBase.m; sourceTree = "<group>"; };
-		OBJ_23 /* QuickSpecBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSpecBase.h; sourceTree = "<group>"; };
-		OBJ_24 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/phatblat/dev/jenkins/Butler/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap; sourceTree = "<group>"; };
-		OBJ_26 /* Callsite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callsite.swift; sourceTree = "<group>"; };
-		OBJ_27 /* ErrorUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorUtility.swift; sourceTree = "<group>"; };
-		OBJ_28 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
-		OBJ_29 /* ExampleGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGroup.swift; sourceTree = "<group>"; };
-		OBJ_30 /* ExampleMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMetadata.swift; sourceTree = "<group>"; };
-		OBJ_31 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
-		OBJ_32 /* NSBundle+CurrentTestBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBundle+CurrentTestBundle.swift"; sourceTree = "<group>"; };
-		OBJ_33 /* NSString+C99ExtendedIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+C99ExtendedIdentifier.swift"; sourceTree = "<group>"; };
-		OBJ_34 /* QuickMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMain.swift; sourceTree = "<group>"; };
-		OBJ_35 /* QuickSelectedTestSuiteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSelectedTestSuiteBuilder.swift; sourceTree = "<group>"; };
-		OBJ_36 /* QuickSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSpec.swift; sourceTree = "<group>"; };
-		OBJ_37 /* QuickTestSuite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTestSuite.swift; sourceTree = "<group>"; };
-		OBJ_38 /* URL+FileName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+FileName.swift"; sourceTree = "<group>"; };
-		OBJ_39 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
-		OBJ_41 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		OBJ_42 /* QuickConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickConfiguration.swift; sourceTree = "<group>"; };
-		OBJ_44 /* DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSL.swift; sourceTree = "<group>"; };
-		OBJ_45 /* World+DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "World+DSL.swift"; sourceTree = "<group>"; };
-		OBJ_47 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
-		OBJ_48 /* ExampleHooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHooks.swift; sourceTree = "<group>"; };
-		OBJ_49 /* HooksPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HooksPhase.swift; sourceTree = "<group>"; };
-		OBJ_50 /* SuiteHooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuiteHooks.swift; sourceTree = "<group>"; };
-		OBJ_52 /* QuickSpecBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuickSpecBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_53 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_54 /* Butler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_55 /* ButlerTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_19 /* Butler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_20 /* ButlerTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_8 /* Butler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butler.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Jenkins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jenkins.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_102 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_103 /* QuickSpecBase.framework in Frameworks */,
-				OBJ_104 /* Quick.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_113 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_114 /* QuickSpecBase.framework in Frameworks */,
-				OBJ_115 /* Quick.framework in Frameworks */,
-				OBJ_116 /* Butler.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_63 /* Frameworks */ = {
+		OBJ_29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_91 /* Frameworks */ = {
+		OBJ_36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_92 /* QuickSpecBase.framework in Frameworks */,
+				OBJ_37 /* Butler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,95 +74,14 @@
 			path = Tests/ButlerTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_18 /* Dependencies */ = {
+		OBJ_18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* Quick 1.1.0 */,
+				OBJ_19 /* Butler.framework */,
+				OBJ_20 /* ButlerTests.xctest */,
 			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_19 /* Quick 1.1.0 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_20 /* QuickSpecBase */,
-				OBJ_25 /* Quick */,
-			);
-			name = "Quick 1.1.0";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_20 /* QuickSpecBase */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_21 /* QuickSpecBase.m */,
-				OBJ_22 /* include */,
-			);
-			name = QuickSpecBase;
-			path = ".build/checkouts/Quick.git-2733117082000052066/Sources/QuickSpecBase";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_22 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_23 /* QuickSpecBase.h */,
-				OBJ_24 /* module.modulemap */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		OBJ_25 /* Quick */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_26 /* Callsite.swift */,
-				OBJ_27 /* ErrorUtility.swift */,
-				OBJ_28 /* Example.swift */,
-				OBJ_29 /* ExampleGroup.swift */,
-				OBJ_30 /* ExampleMetadata.swift */,
-				OBJ_31 /* Filter.swift */,
-				OBJ_32 /* NSBundle+CurrentTestBundle.swift */,
-				OBJ_33 /* NSString+C99ExtendedIdentifier.swift */,
-				OBJ_34 /* QuickMain.swift */,
-				OBJ_35 /* QuickSelectedTestSuiteBuilder.swift */,
-				OBJ_36 /* QuickSpec.swift */,
-				OBJ_37 /* QuickTestSuite.swift */,
-				OBJ_38 /* URL+FileName.swift */,
-				OBJ_39 /* World.swift */,
-				OBJ_40 /* Configuration */,
-				OBJ_43 /* DSL */,
-				OBJ_46 /* Hooks */,
-			);
-			name = Quick;
-			path = ".build/checkouts/Quick.git-2733117082000052066/Sources/Quick";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_40 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_41 /* Configuration.swift */,
-				OBJ_42 /* QuickConfiguration.swift */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		OBJ_43 /* DSL */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_44 /* DSL.swift */,
-				OBJ_45 /* World+DSL.swift */,
-			);
-			path = DSL;
-			sourceTree = "<group>";
-		};
-		OBJ_46 /* Hooks */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_47 /* Closures.swift */,
-				OBJ_48 /* ExampleHooks.swift */,
-				OBJ_49 /* HooksPhase.swift */,
-				OBJ_50 /* SuiteHooks.swift */,
-			);
-			path = Hooks;
-			sourceTree = "<group>";
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		OBJ_5 /*  */ = {
 			isa = PBXGroup;
@@ -283,22 +93,10 @@
 				OBJ_15 /* Docs */,
 				OBJ_16 /* Example */,
 				OBJ_17 /* gradle */,
-				OBJ_18 /* Dependencies */,
-				OBJ_51 /* Products */,
+				OBJ_18 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
-		};
-		OBJ_51 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_52 /* QuickSpecBase.framework */,
-				OBJ_53 /* Quick.framework */,
-				OBJ_54 /* Butler.framework */,
-				OBJ_55 /* ButlerTests.xctest */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
@@ -313,76 +111,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_107 /* ButlerTests */ = {
+		OBJ_21 /* Butler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_108 /* Build configuration list for PBXNativeTarget "ButlerTests" */;
+			buildConfigurationList = OBJ_22 /* Build configuration list for PBXNativeTarget "Butler" */;
 			buildPhases = (
-				OBJ_111 /* Sources */,
-				OBJ_113 /* Frameworks */,
+				OBJ_25 /* Sources */,
+				OBJ_29 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_117 /* PBXTargetDependency */,
-				OBJ_118 /* PBXTargetDependency */,
-				OBJ_119 /* PBXTargetDependency */,
-			);
-			name = ButlerTests;
-			productName = ButlerTests;
-			productReference = OBJ_55 /* ButlerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		OBJ_56 /* QuickSpecBase */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_57 /* Build configuration list for PBXNativeTarget "QuickSpecBase" */;
-			buildPhases = (
-				OBJ_60 /* ShellScript */,
-				OBJ_61 /* Sources */,
-				OBJ_63 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = QuickSpecBase;
-			productName = QuickSpecBase;
-			productReference = OBJ_52 /* QuickSpecBase.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		OBJ_64 /* Quick */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_65 /* Build configuration list for PBXNativeTarget "Quick" */;
-			buildPhases = (
-				OBJ_68 /* Sources */,
-				OBJ_91 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_93 /* PBXTargetDependency */,
-			);
-			name = Quick;
-			productName = Quick;
-			productReference = OBJ_53 /* Quick.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		OBJ_94 /* Butler */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_95 /* Build configuration list for PBXNativeTarget "Butler" */;
-			buildPhases = (
-				OBJ_98 /* Sources */,
-				OBJ_102 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_105 /* PBXTargetDependency */,
-				OBJ_106 /* PBXTargetDependency */,
 			);
 			name = Butler;
 			productName = Butler;
-			productReference = OBJ_54 /* Butler.framework */;
+			productReference = OBJ_19 /* Butler.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		OBJ_30 /* ButlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_31 /* Build configuration list for PBXNativeTarget "ButlerTests" */;
+			buildPhases = (
+				OBJ_34 /* Sources */,
+				OBJ_36 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_38 /* PBXTargetDependency */,
+			);
+			name = ButlerTests;
+			productName = ButlerTests;
+			productReference = OBJ_20 /* ButlerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -400,163 +160,85 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_51 /* Products */;
+			productRefGroup = OBJ_18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_56 /* QuickSpecBase */,
-				OBJ_64 /* Quick */,
-				OBJ_94 /* Butler */,
-				OBJ_107 /* ButlerTests */,
+				OBJ_21 /* Butler */,
+				OBJ_30 /* ButlerTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		OBJ_60 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "mkdir -p \"${PROJECT_TEMP_DIR}/SymlinkLibs\"\nln -sf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${PROJECT_TEMP_DIR}/SymlinkLibs/lib${EXECUTABLE_NAME}.dylib\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_111 /* Sources */ = {
+		OBJ_25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_112 /* ButlerTests.swift in Sources */,
+				OBJ_26 /* Butler.swift in Sources */,
+				OBJ_27 /* Jenkins.swift in Sources */,
+				OBJ_28 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_61 /* Sources */ = {
+		OBJ_34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_62 /* QuickSpecBase.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_69 /* Callsite.swift in Sources */,
-				OBJ_70 /* ErrorUtility.swift in Sources */,
-				OBJ_71 /* Example.swift in Sources */,
-				OBJ_72 /* ExampleGroup.swift in Sources */,
-				OBJ_73 /* ExampleMetadata.swift in Sources */,
-				OBJ_74 /* Filter.swift in Sources */,
-				OBJ_75 /* NSBundle+CurrentTestBundle.swift in Sources */,
-				OBJ_76 /* NSString+C99ExtendedIdentifier.swift in Sources */,
-				OBJ_77 /* QuickMain.swift in Sources */,
-				OBJ_78 /* QuickSelectedTestSuiteBuilder.swift in Sources */,
-				OBJ_79 /* QuickSpec.swift in Sources */,
-				OBJ_80 /* QuickTestSuite.swift in Sources */,
-				OBJ_81 /* URL+FileName.swift in Sources */,
-				OBJ_82 /* World.swift in Sources */,
-				OBJ_83 /* Configuration.swift in Sources */,
-				OBJ_84 /* QuickConfiguration.swift in Sources */,
-				OBJ_85 /* DSL.swift in Sources */,
-				OBJ_86 /* World+DSL.swift in Sources */,
-				OBJ_87 /* Closures.swift in Sources */,
-				OBJ_88 /* ExampleHooks.swift in Sources */,
-				OBJ_89 /* HooksPhase.swift in Sources */,
-				OBJ_90 /* SuiteHooks.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_98 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_99 /* Butler.swift in Sources */,
-				OBJ_100 /* Jenkins.swift in Sources */,
-				OBJ_101 /* User.swift in Sources */,
+				OBJ_35 /* ButlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_105 /* PBXTargetDependency */ = {
+		OBJ_38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_56 /* QuickSpecBase */;
-			targetProxy = F8A5AE161EE0971B00B3897A /* PBXContainerItemProxy */;
-		};
-		OBJ_106 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_64 /* Quick */;
-			targetProxy = F8A5AE171EE0971B00B3897A /* PBXContainerItemProxy */;
-		};
-		OBJ_117 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_56 /* QuickSpecBase */;
-			targetProxy = F8A5AE181EE0971B00B3897A /* PBXContainerItemProxy */;
-		};
-		OBJ_118 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_64 /* Quick */;
-			targetProxy = F8A5AE191EE0971B00B3897A /* PBXContainerItemProxy */;
-		};
-		OBJ_119 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_94 /* Butler */;
-			targetProxy = F8A5AE1A1EE0971B00B3897A /* PBXContainerItemProxy */;
-		};
-		OBJ_93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_56 /* QuickSpecBase */;
-			targetProxy = F8A5AE151EE0971B00B3897A /* PBXContainerItemProxy */;
+			target = OBJ_21 /* Butler */;
+			targetProxy = F8A5AE1B1EE0A03400B3897A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_109 /* Debug */ = {
+		OBJ_23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Quick.git-2733117082000052066/Sources/QuickSpecBase/include",
-					"$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase",
-				);
-				INFOPLIST_FILE = Butler.xcodeproj/ButlerTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Butler.xcodeproj/Butler_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
-				TARGET_NAME = ButlerTests;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Butler;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Butler;
 			};
 			name = Debug;
 		};
-		OBJ_110 /* Release */ = {
+		OBJ_24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Quick.git-2733117082000052066/Sources/QuickSpecBase/include",
-					"$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase",
-				);
-				INFOPLIST_FILE = Butler.xcodeproj/ButlerTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Butler.xcodeproj/Butler_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
-				TARGET_NAME = ButlerTests;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Butler;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Butler;
 			};
 			name = Release;
 		};
@@ -583,6 +265,40 @@
 			};
 			name = Debug;
 		};
+		OBJ_32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Butler.xcodeproj/ButlerTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = ButlerTests;
+			};
+			name = Debug;
+		};
+		OBJ_33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Butler.xcodeproj/ButlerTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = ButlerTests;
+			};
+			name = Release;
+		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -604,172 +320,9 @@
 			};
 			name = Release;
 		};
-		OBJ_58 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Quick.git-2733117082000052066/Sources/QuickSpecBase/include",
-				);
-				INFOPLIST_FILE = Butler.xcodeproj/QuickSpecBase_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = QuickSpecBase;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = QuickSpecBase;
-			};
-			name = Debug;
-		};
-		OBJ_59 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Quick.git-2733117082000052066/Sources/QuickSpecBase/include",
-				);
-				INFOPLIST_FILE = Butler.xcodeproj/QuickSpecBase_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = QuickSpecBase;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = QuickSpecBase;
-			};
-			name = Release;
-		};
-		OBJ_66 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Quick.git-2733117082000052066/Sources/QuickSpecBase/include",
-					"$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase",
-				);
-				INFOPLIST_FILE = Butler.xcodeproj/Quick_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = Quick;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Quick;
-			};
-			name = Debug;
-		};
-		OBJ_67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Quick.git-2733117082000052066/Sources/QuickSpecBase/include",
-					"$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase",
-				);
-				INFOPLIST_FILE = Butler.xcodeproj/Quick_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = Quick;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Quick;
-			};
-			name = Release;
-		};
-		OBJ_96 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Quick.git-2733117082000052066/Sources/QuickSpecBase/include",
-					"$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase",
-				);
-				INFOPLIST_FILE = Butler.xcodeproj/Butler_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = Butler;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Butler;
-			};
-			name = Debug;
-		};
-		OBJ_97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Quick.git-2733117082000052066/Sources/QuickSpecBase/include",
-					"$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase",
-				);
-				INFOPLIST_FILE = Butler.xcodeproj/Butler_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = Butler;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Butler;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_108 /* Build configuration list for PBXNativeTarget "ButlerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_109 /* Debug */,
-				OBJ_110 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		OBJ_2 /* Build configuration list for PBXProject "Butler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -779,29 +332,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_57 /* Build configuration list for PBXNativeTarget "QuickSpecBase" */ = {
+		OBJ_22 /* Build configuration list for PBXNativeTarget "Butler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_58 /* Debug */,
-				OBJ_59 /* Release */,
+				OBJ_23 /* Debug */,
+				OBJ_24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_65 /* Build configuration list for PBXNativeTarget "Quick" */ = {
+		OBJ_31 /* Build configuration list for PBXNativeTarget "ButlerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_66 /* Debug */,
-				OBJ_67 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_95 /* Build configuration list for PBXNativeTarget "Butler" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_96 /* Debug */,
-				OBJ_97 /* Release */,
+				OBJ_32 /* Debug */,
+				OBJ_33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

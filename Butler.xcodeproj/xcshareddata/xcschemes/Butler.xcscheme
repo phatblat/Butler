@@ -14,35 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_56"
-               BuildableName = "QuickSpecBase.framework"
-               BlueprintName = "QuickSpecBase"
-               ReferencedContainer = "container:Butler.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_64"
-               BuildableName = "Quick.framework"
-               BlueprintName = "Quick"
-               ReferencedContainer = "container:Butler.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_94"
+               BlueprintIdentifier = "OBJ_21"
                BuildableName = "Butler.framework"
                BlueprintName = "Butler"
                ReferencedContainer = "container:Butler.xcodeproj">
@@ -60,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_107"
+               BlueprintIdentifier = "OBJ_30"
                BuildableName = "ButlerTests.xctest"
                BlueprintName = "ButlerTests"
                ReferencedContainer = "container:Butler.xcodeproj">
@@ -83,9 +55,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_56"
-            BuildableName = "QuickSpecBase.framework"
-            BlueprintName = "QuickSpecBase"
+            BlueprintIdentifier = "OBJ_21"
+            BuildableName = "Butler.framework"
+            BlueprintName = "Butler"
             ReferencedContainer = "container:Butler.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
