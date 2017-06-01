@@ -1,6 +1,8 @@
+use_frameworks!
+inhibit_all_warnings!
+
 target 'Butler' do
   platform :osx, '10.10'
-  use_frameworks!
 
   target 'ButlerTests' do
     inherit! :search_paths

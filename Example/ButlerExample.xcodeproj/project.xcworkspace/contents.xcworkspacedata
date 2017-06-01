@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Butler.xcodeproj">
+      location = "self:/Users/phatblat/dev/jenkins/Butler/Example/ButlerExample.xcodeproj">
    </FileRef>
 </Workspace>
