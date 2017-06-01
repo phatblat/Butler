@@ -40,6 +40,11 @@ task podLibLint(type: Exec) {
 
 /* Swift Package Manager */
 
+task xcodeGenerate(type: Exec) {
+    description 'Generates an Xcode project'
+    commandLine 'swift package generate-xcodeproj'.tokenize()
+}
+
 task spmDescribe(type: Exec) {
     commandLine 'swift package describe'.tokenize()
 }
