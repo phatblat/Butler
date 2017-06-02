@@ -3,21 +3,39 @@
  * Butler
  */
 
+ext {
+    if (project.hasProperty('verbose')) {
+        verbose = project.verbose.toBoolean()
+    } else {
+        verbose = false
+    }
+}
+
+if (System.env.JENKINS_URL) {
+    println "Running on jenkins"
+    ext.verbose = true
+}
+
 /* Bundler */
 
 task bundleInstall(type: Exec) {
-    commandLine 'bundle install'.tokenize()
-}
-
-task bundleInstallQuiet(type: Exec) {
-    commandLine 'bundle install --quiet'.tokenize()
+    String command = 'bundle install'
+    if (!verbose) {
+        command += ' --quiet'
+    }
+    commandLine command.tokenize()
 }
 
 /* CocoaPods */
 
 task podLibLint(type: Exec) {
-    dependsOn bundleInstallQuiet
-    commandLine 'bundle exec pod lib lint'.tokenize()
+    dependsOn bundleInstall
+
+    String command = 'bundle exec pod lib lint'
+    if (verbose) {
+        command += ' --verbose'
+    }
+    commandLine command.tokenize()
 }
 
 /* Swift Package Manager */
@@ -36,11 +54,19 @@ task spmDependencies(type: Exec) {
 }
 
 task swiftBuild(type: Exec) {
-    commandLine 'swift build'.tokenize()
+    String command = 'swift build'
+    if (verbose) {
+        command += ' --verbose'
+    }
+    commandLine command.tokenize()
 }
 
 task swiftTest(type: Exec) {
-    commandLine 'swift test'.tokenize()
+    String command = 'swift test'
+    if (verbose) {
+        command += ' --verbose'
+    }
+    commandLine command.tokenize()
 }
 
 /* Top-Level Tasks for CI */
