@@ -19,7 +19,7 @@ class TableOfContentsSpec: QuickSpec {
             it("will eventually") {
                 expect("time").toEventually( equal("time") )
             }
-
+            
             context("these will pass") {
 
                 it("can do maths") {
@@ -40,7 +40,7 @@ class TableOfContentsSpec: QuickSpec {
                     waitUntil { done in
                         Thread.sleep(forTimeInterval: 0.5)
                         expect(time) == "done"
-                        
+
                         done()
                     }
                 }

@@ -17,6 +17,7 @@
 		7548C938F0F6D862DED86D9E /* Pods_ButlerExample_macOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB017A2ACD608F9ECAAF468 /* Pods_ButlerExample_macOSTests.framework */; };
 		780D41B2DB5C58DD8CB3A4ED /* Pods_ButlerExample_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8FDC7B308D2BE5ADEAE2A9 /* Pods_ButlerExample_iOSTests.framework */; };
 		9AEB20CEC0E73DEDFB018C00 /* Pods_ButlerExample_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC10458976A24264FA2E9F3 /* Pods_ButlerExample_iOS.framework */; };
+		F8A3C0E91EE1ED0B002B13BD /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3C0E71EE1ECF0002B13BD /* Tests.swift */; };
 		F8F58F061EE0B5B900FA34CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F58F051EE0B5B900FA34CB /* AppDelegate.swift */; };
 		F8F58F081EE0B5B900FA34CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F58F071EE0B5B900FA34CB /* ViewController.swift */; };
 		F8F58F0A1EE0B5B900FA34CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F58F091EE0B5B900FA34CB /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		C5FD4CF87E7CAF1601DCB4DE /* Pods-ButlerExample-macOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButlerExample-macOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ButlerExample-macOSTests/Pods-ButlerExample-macOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD04CD7E53CB6227851616B4 /* Pods_ButlerExample_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButlerExample_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8FDC7B308D2BE5ADEAE2A9 /* Pods_ButlerExample_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButlerExample_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A3C0E71EE1ECF0002B13BD /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		F8F58F031EE0B5B800FA34CB /* ButlerExample-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ButlerExample-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F58F051EE0B5B900FA34CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8F58F071EE0B5B900FA34CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 		F8F58F161EE0B5B900FA34CB /* ButlerExample-macOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8A3C0E71EE1ECF0002B13BD /* Tests.swift */,
 				F8F58F171EE0B5B900FA34CB /* ButlerExample_macOSTests.swift */,
 				F8F58F191EE0B5B900FA34CB /* Info.plist */,
 			);
@@ -615,6 +618,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F58F181EE0B5B900FA34CB /* ButlerExample_macOSTests.swift in Sources */,
+				F8A3C0E91EE1ED0B002B13BD /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
