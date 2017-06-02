@@ -28,7 +28,13 @@ task bundleInstall(type: Exec) {
 
 task podLibLint(type: Exec) {
     dependsOn bundleInstall
-    commandLine 'bundle exec pod lib lint'.tokenize()
+    String command = 'bundle exec pod lib lint'
+
+    if (verbose) {
+        command += ' --verbose'
+    }
+
+    commandLine command.tokenize()
 }
 
 /* Swift Package Manager */
