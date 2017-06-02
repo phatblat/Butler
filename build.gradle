@@ -3,20 +3,31 @@
  * Butler
  */
 
+ext {
+    verbose = false
+}
+
+if (System.env.JENKINS_URL) {
+    println "Running on jenkins"
+    ext.verbose = true
+}
+
 /* Bundler */
 
 task bundleInstall(type: Exec) {
-    commandLine 'bundle install'.tokenize()
-}
+    String command = 'bundle install'
 
-task bundleInstallQuiet(type: Exec) {
-    commandLine 'bundle install --quiet'.tokenize()
+    if (!verbose) {
+        command += ' --quiet'
+    }
+
+    commandLine command.tokenize()
 }
 
 /* CocoaPods */
 
 task podLibLint(type: Exec) {
-    dependsOn bundleInstallQuiet
+    dependsOn bundleInstall
     commandLine 'bundle exec pod lib lint'.tokenize()
 }
 
