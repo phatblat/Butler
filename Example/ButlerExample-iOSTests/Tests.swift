@@ -6,20 +6,20 @@ import Butler
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
+        describe("these will pass") {
 
             it("can do maths") {
-                expect(1) == 2
+                expect(1) == 1
             }
 
             it("can read") {
-                expect("number") == "string"
+                expect("number") == "number"
             }
 
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
+            it("will eventually") {
+                expect("time").toEventually( equal("time") )
             }
-            
+
             context("these will pass") {
 
                 it("can do maths") {
@@ -40,7 +40,7 @@ class TableOfContentsSpec: QuickSpec {
                     waitUntil { done in
                         Thread.sleep(forTimeInterval: 0.5)
                         expect(time) == "done"
-
+                        
                         done()
                     }
                 }

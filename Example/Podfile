@@ -1,12 +1,28 @@
 use_frameworks!
+inhibit_all_warnings!
 
-target 'Butler_Example' do
-  pod 'Butler', :path => '../'
+target 'ButlerExample-iOS' do
+  platform :ios, '10.0'
 
-  target 'Butler_Tests' do
+  pod 'Butler', path: '../', inhibit_warnings: false
+
+  target 'ButlerExample-iOSTests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 1.0.0'
-  pod 'Nimble', '~> 5.1.1'
+    pod 'Quick'
+    pod 'Nimble'
+  end
+end
+
+target 'ButlerExample-macOS' do
+  platform :osx, '10.10'
+
+  pod 'Butler', path: '../', inhibit_warnings: false
+
+  target 'ButlerExample-macOSTests' do
+    inherit! :search_paths
+
+    pod 'Quick'
+    pod 'Nimble'
   end
 end

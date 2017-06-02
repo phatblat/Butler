@@ -1,22 +1,15 @@
 PODS:
-  - Butler (0.1.0)
   - Nimble (7.0.0)
   - Quick (1.1.0)
 
 DEPENDENCIES:
-  - Butler (from `../`)
   - Nimble
   - Quick
 
-EXTERNAL SOURCES:
-  Butler:
-    :path: "../"
-
 SPEC CHECKSUMS:
-  Butler: e8fa5285340c67dc186e96a1387572f1a48b69be
   Nimble: 874982b605d4d752fcac6be695d13c502de84b1b
   Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
 
-PODFILE CHECKSUM: 8d7de78027357348bb09dea84e7ace5a8ee3a2ef
+PODFILE CHECKSUM: 351b453147fa2dd6c7b61d2794a1ba3d9a4bd064
 
 COCOAPODS: 1.2.1
