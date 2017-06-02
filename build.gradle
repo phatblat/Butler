@@ -4,7 +4,11 @@
  */
 
 ext {
-    verbose = false
+    if (project.hasProperty('verbose')) {
+        verbose = project.verbose.toBoolean()
+    } else {
+        verbose = false
+    }
 }
 
 if (System.env.JENKINS_URL) {
