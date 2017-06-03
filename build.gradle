@@ -71,6 +71,14 @@ task spmDependencies(type: Exec) {
     commandLine 'swift package show-dependencies'.tokenize()
 }
 
+task swiftFetchDependencies(type: Exec) {
+    String command = 'swift package fetch'
+    if (verbose) {
+        command += ' --verbose'
+    }
+    commandLine command.tokenize()
+}
+
 task swiftBuild(type: Exec) {
     String command = 'swift build'
     if (verbose) {
@@ -92,6 +100,7 @@ task swiftTest(type: Exec) {
 task xcode {
     description 'Builds and runs tests using xcodebuild.'
     tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
+    tasks.getByName('xcodebuild').dependsOn swiftFetchDependencies
     dependsOn 'build'
     dependsOn 'test'
 }
