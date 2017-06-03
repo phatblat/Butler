@@ -74,7 +74,13 @@ Before regenerating the project, make sure to:
 1. Delete the `Pods` folder reference.
   - this avoids `
 NoMethodError - undefined method `files' for <PBXFileReference path=`Pods` UUID=`OBJ_20`>:Xcodeproj::Project::Object::PBXFileReference`
-1. Run `swift package generate-xcodeproj`
+1. Run `swift package generate-xcodeproj`.
+1. Convert `Config` folder reference into group.
+  - New Group ("Config")
+  - Drag .xcconfig files from Config folder to Config group.
+    - Don't add to any targets.
+  - Delete the Config folder reference.
+1. Run `pod install`.
 1.
 
 ------
