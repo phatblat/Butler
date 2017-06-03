@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		018529C93CF9BD3515CB3F81 /* Pods_Butler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6635F95ABEEBABA397CE90 /* Pods_Butler.framework */; };
 		6EDA7D0146C739AB906B6D68 /* Pods_ButlerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3720312454F1F35B6580A8 /* Pods_ButlerTests.framework */; };
+		F8A02D9D1EE352EE00F49405 /* JSON in Resources */ = {isa = PBXBuildFile; fileRef = F8A02D9B1EE352C800F49405 /* JSON */; };
 		OBJ_34 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* SwiftyJSON.swift */; };
 		OBJ_41 /* Butler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Butler.swift */; };
 		OBJ_42 /* Jenkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Jenkins.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		4D3720312454F1F35B6580A8 /* Pods_ButlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6635F95ABEEBABA397CE90 /* Pods_Butler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A02D9B1EE352C800F49405 /* JSON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JSON; sourceTree = "<group>"; };
 		F8E8A28B1EE2583F007F96A5 /* Butler.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Butler.debug.xcconfig; path = Config/Butler.debug.xcconfig; sourceTree = "<group>"; };
 		F8E8A28C1EE2583F007F96A5 /* Butler.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Butler.release.xcconfig; path = Config/Butler.release.xcconfig; sourceTree = "<group>"; };
 		F8E8A28D1EE2583F007F96A5 /* ButlerTests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ButlerTests.debug.xcconfig; path = Config/ButlerTests.debug.xcconfig; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				OBJ_18 /* Docs */,
 				OBJ_19 /* Example */,
 				OBJ_20 /* gradle */,
+				F8A02D9B1EE352C800F49405 /* JSON */,
 				OBJ_22 /* Dependencies */,
 				OBJ_25 /* Products */,
 				5E19B29F916E1D84D8F020D4 /* Pods */,
@@ -246,6 +249,7 @@
 				65FF3F8FCEBD32BBB1552B6B /* [CP] Check Pods Manifest.lock */,
 				OBJ_51 /* Sources */,
 				OBJ_54 /* Frameworks */,
+				F8A02D9C1EE352E400F49405 /* Resources */,
 				F032D7A5EB31390A3AA4FB89 /* [CP] Embed Pods Frameworks */,
 				AAD25FB8FBDE029D4E8C3766 /* [CP] Copy Pods Resources */,
 			);
@@ -286,6 +290,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8A02D9C1EE352E400F49405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A02D9D1EE352EE00F49405 /* JSON in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		2FB1824514709586E13F1E57 /* [CP] Check Pods Manifest.lock */ = {
