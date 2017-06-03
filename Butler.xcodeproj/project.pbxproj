@@ -51,7 +51,6 @@
 		OBJ_17 /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = SOURCE_ROOT; };
 		OBJ_18 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
 		OBJ_19 /* gradle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gradle; sourceTree = SOURCE_ROOT; };
-		OBJ_20 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
 		OBJ_23 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		OBJ_25 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_26 /* Butler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,7 +133,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -145,11 +144,9 @@
 				OBJ_17 /* Docs */,
 				OBJ_18 /* Example */,
 				OBJ_19 /* gradle */,
-				OBJ_20 /* Pods */,
 				OBJ_21 /* Dependencies */,
 				OBJ_24 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -231,7 +228,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
