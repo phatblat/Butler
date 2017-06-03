@@ -73,9 +73,6 @@ task spmDependencies(type: Exec) {
 
 task swiftFetchDependencies(type: Exec) {
     String command = 'swift package fetch'
-    if (verbose) {
-        command += ' --verbose'
-    }
     commandLine command.tokenize()
 }
 
