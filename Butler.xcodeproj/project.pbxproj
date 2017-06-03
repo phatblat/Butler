@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		292992CDB051C1776117A9E5 /* Pods_ButlerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6A9B7346F066BE15B21428 /* Pods_ButlerTests.framework */; };
 		667E75F408208DC98C3C2697 /* Pods_Butler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03611EB069CAD1C141A91C1D /* Pods_Butler.framework */; };
+		F8829E361EE23C33007AED53 /* FreeStyleProjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8829E341EE23BFD007AED53 /* FreeStyleProjectSpec.swift */; };
 		OBJ_26 /* Butler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Butler.swift */; };
 		OBJ_27 /* Jenkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Jenkins.swift */; };
 		OBJ_28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* User.swift */; };
@@ -33,6 +34,7 @@
 		CE6A9B7346F066BE15B21428 /* Pods_ButlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F132AE8D8202A890EFFDA47A /* Pods-Butler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Butler/Pods-Butler.release.xcconfig"; sourceTree = "<group>"; };
 		F7F22CD9E5A82FCEE3586693 /* Pods-Butler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Butler/Pods-Butler.debug.xcconfig"; sourceTree = "<group>"; };
+		F8829E341EE23BFD007AED53 /* FreeStyleProjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeStyleProjectSpec.swift; sourceTree = "<group>"; };
 		OBJ_10 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		OBJ_13 /* ButlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButlerTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = SOURCE_ROOT; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_13 /* ButlerTests.swift */,
+				F8829E341EE23BFD007AED53 /* FreeStyleProjectSpec.swift */,
 			);
 			name = ButlerTests;
 			path = Tests/ButlerTests;
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				F8829E361EE23C33007AED53 /* FreeStyleProjectSpec.swift in Sources */,
 				OBJ_35 /* ButlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
