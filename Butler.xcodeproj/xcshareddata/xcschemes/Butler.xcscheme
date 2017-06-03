@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_28"
+               BlueprintIdentifier = "OBJ_29"
                BuildableName = "SwiftyJSON.framework"
                BlueprintName = "SwiftyJSON"
                ReferencedContainer = "container:Butler.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_35"
+               BlueprintIdentifier = "OBJ_36"
                BuildableName = "Butler.framework"
                BlueprintName = "Butler"
                ReferencedContainer = "container:Butler.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_46"
+               BlueprintIdentifier = "OBJ_47"
                BuildableName = "ButlerTests.xctest"
                BlueprintName = "ButlerTests"
                ReferencedContainer = "container:Butler.xcodeproj">
@@ -69,7 +69,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_28"
+            BlueprintIdentifier = "OBJ_29"
             BuildableName = "SwiftyJSON.framework"
             BlueprintName = "SwiftyJSON"
             ReferencedContainer = "container:Butler.xcodeproj">
