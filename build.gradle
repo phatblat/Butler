@@ -3,6 +3,21 @@
  * Butler
  */
 
+buildscript {
+    repositories {
+        maven { url('http://repository.openbakery.org/') }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'org.openbakery', name: 'xcode-plugin', version: '+'
+    }
+}
+apply plugin: 'org.openbakery.xcode-plugin'
+
+xcodebuild {
+    target = 'Butler'
+}
+
 ext {
     if (project.hasProperty('verbose')) {
         verbose = project.verbose.toBoolean()

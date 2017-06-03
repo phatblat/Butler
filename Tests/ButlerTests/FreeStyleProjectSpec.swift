@@ -12,7 +12,6 @@ import Nimble
 import SwiftyJSON
 
 class FreeStyleProjectSpec: QuickSpec {
-
     override func spec() {
         describe("freestyle project job") {
             let jsonFile: NSString = "FreeStyleProject.json"
