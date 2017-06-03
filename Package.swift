@@ -13,6 +13,7 @@ let package = Package(
 
 package.exclude = [
     "bin",
+    "Butler.xcworkspace",
     "Docs",
     "Example",
     "gradle"
