@@ -81,7 +81,8 @@ NoMethodError - undefined method `files' for <PBXFileReference path=`Pods` UUID=
     - Don't add to any targets.
   - Delete the Config folder reference.
 1. Run `pod install`.
-1.
+1. Delete target level override for the following build settings:
+  - `LD_RUNPATH_SEARCH_PATHS`
 
 ------
 
