@@ -90,11 +90,19 @@ task swiftTest(type: Exec) {
 
 /* Top-Level Tasks for CI */
 
+task xcode {
+    description 'Builds and runs tests using xcodebuild.'
+    dependsOn 'build'
+    dependsOn 'test'
+}
+
 task cocoapods {
+    description 'Builds and lints the library as a CocoaPod.'
     dependsOn podLibLint
 }
 
 task spm {
+    description 'Builds and runs tests using the Swift Package Manager.'
     dependsOn spmDescribe
     dependsOn spmDependencies
     dependsOn swiftBuild
@@ -102,6 +110,8 @@ task spm {
 }
 
 task buildAll {
+    description 'Runs all types of builds.'
+    dependsOn xcode
     dependsOn cocoapods
     dependsOn spm
 }
