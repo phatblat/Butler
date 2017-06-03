@@ -51,6 +51,7 @@
 		F8E8A28C1EE2583F007F96A5 /* Butler.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Butler.release.xcconfig; path = Config/Butler.release.xcconfig; sourceTree = "<group>"; };
 		F8E8A28D1EE2583F007F96A5 /* ButlerTests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ButlerTests.debug.xcconfig; path = Config/ButlerTests.debug.xcconfig; sourceTree = "<group>"; };
 		F8E8A28E1EE2583F007F96A5 /* ButlerTests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ButlerTests.release.xcconfig; path = Config/ButlerTests.release.xcconfig; sourceTree = "<group>"; };
+		F8E8A28F1EE25CD7007F96A5 /* Universal.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Universal.xcconfig; path = Config/Universal.xcconfig; sourceTree = "<group>"; };
 		OBJ_10 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		OBJ_13 /* ButlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButlerTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* FreeStyleProjectSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeStyleProjectSpec.swift; sourceTree = "<group>"; };
@@ -121,6 +122,7 @@
 				F8E8A28C1EE2583F007F96A5 /* Butler.release.xcconfig */,
 				F8E8A28D1EE2583F007F96A5 /* ButlerTests.debug.xcconfig */,
 				F8E8A28E1EE2583F007F96A5 /* ButlerTests.release.xcconfig */,
+				F8E8A28F1EE25CD7007F96A5 /* Universal.xcconfig */,
 			);
 			name = Config;
 			sourceTree = "<group>";

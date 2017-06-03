@@ -1,3 +1,2 @@
 #include "Pods/Target Support Files/Pods-Butler/Pods-Butler.release.xcconfig"
-
-SDKROOT =
+#include "Universal.xcconfig"
