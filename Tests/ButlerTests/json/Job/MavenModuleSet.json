@@ -1,0 +1,42 @@
+{
+  "_class": "hudson.maven.MavenModuleSet",
+  "actions": [
+    {},
+    {},
+    {},
+    {
+      "_class": "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    }
+  ],
+  "buildable": true,
+  "builds": [],
+  "color": "notbuilt",
+  "concurrentBuild": false,
+  "description": "",
+  "displayName": "Maven",
+  "displayNameOrNull": null,
+  "downstreamProjects": [],
+  "firstBuild": null,
+  "fullDisplayName": "Job Types » Maven",
+  "fullName": "Job Types/Maven",
+  "healthReport": [],
+  "inQueue": false,
+  "keepDependencies": false,
+  "lastBuild": null,
+  "lastCompletedBuild": null,
+  "lastFailedBuild": null,
+  "lastStableBuild": null,
+  "lastSuccessfulBuild": null,
+  "lastUnstableBuild": null,
+  "lastUnsuccessfulBuild": null,
+  "modules": [],
+  "name": "Maven",
+  "nextBuildNumber": 1,
+  "property": [],
+  "queueItem": null,
+  "scm": {
+    "_class": "hudson.scm.NullSCM"
+  },
+  "upstreamProjects": [],
+  "url": "http://jenkins.log-g.co/job/Job%20Types/job/Maven/"
+}

@@ -1,0 +1,38 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowJob",
+  "actions": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    }
+  ],
+  "buildable": true,
+  "builds": [],
+  "color": "notbuilt",
+  "concurrentBuild": true,
+  "description": null,
+  "displayName": "Pipeline",
+  "displayNameOrNull": null,
+  "firstBuild": null,
+  "fullDisplayName": "Job Types » Pipeline",
+  "fullName": "Job Types/Pipeline",
+  "healthReport": [],
+  "inQueue": false,
+  "keepDependencies": false,
+  "lastBuild": null,
+  "lastCompletedBuild": null,
+  "lastFailedBuild": null,
+  "lastStableBuild": null,
+  "lastSuccessfulBuild": null,
+  "lastUnstableBuild": null,
+  "lastUnsuccessfulBuild": null,
+  "name": "Pipeline",
+  "nextBuildNumber": 1,
+  "property": [],
+  "queueItem": null,
+  "url": "http://jenkins.log-g.co/job/Job%20Types/job/Pipeline/"
+}

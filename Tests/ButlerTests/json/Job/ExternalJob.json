@@ -1,0 +1,34 @@
+{
+  "_class": "hudson.model.ExternalJob",
+  "actions": [
+    {},
+    {},
+    {
+      "_class": "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    }
+  ],
+  "buildable": false,
+  "builds": [],
+  "color": "notbuilt",
+  "description": "",
+  "displayName": "External Job",
+  "displayNameOrNull": null,
+  "firstBuild": null,
+  "fullDisplayName": "Job Types » External Job",
+  "fullName": "Job Types/External Job",
+  "healthReport": [],
+  "inQueue": false,
+  "keepDependencies": false,
+  "lastBuild": null,
+  "lastCompletedBuild": null,
+  "lastFailedBuild": null,
+  "lastStableBuild": null,
+  "lastSuccessfulBuild": null,
+  "lastUnstableBuild": null,
+  "lastUnsuccessfulBuild": null,
+  "name": "External Job",
+  "nextBuildNumber": 1,
+  "property": [],
+  "queueItem": null,
+  "url": "http://jenkins.log-g.co/job/Job%20Types/job/External%20Job/"
+}
