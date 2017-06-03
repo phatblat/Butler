@@ -2,4 +2,4 @@
 #include "Universal.xcconfig"
 
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks
-FRAMEWORK_SEARCH_PATHS = $(SDKROOT) $(inherited)
+//FRAMEWORK_SEARCH_PATHS = $(SDKROOT) $(inherited)
