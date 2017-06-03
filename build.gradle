@@ -49,7 +49,6 @@ task bundleInstall(type: Exec) {
 
 task podLibLint(type: Exec) {
     dependsOn bundleInstall
-
     String command = 'bundle exec pod lib lint'
     if (verbose) {
         command += ' --verbose'
@@ -92,6 +91,7 @@ task swiftTest(type: Exec) {
 
 task xcode {
     description 'Builds and runs tests using xcodebuild.'
+    dependsOn bundleInstall
     dependsOn 'build'
     dependsOn 'test'
 }
