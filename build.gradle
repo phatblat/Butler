@@ -91,7 +91,7 @@ task swiftTest(type: Exec) {
 
 task xcode {
     description 'Builds and runs tests using xcodebuild.'
-    dependsOn bundleInstall
+    tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
     dependsOn 'build'
     dependsOn 'test'
 }
