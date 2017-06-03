@@ -1,5 +1,3 @@
-#include "Pods/Target Support Files/Pods-Butler/Pods-Butler.debug.xcconfig"
-
 SDKROOT = macosx
 SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator
 VALID_ARCHS = arm64 armv7 armv7s i386 x86_64
