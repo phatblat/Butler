@@ -15,6 +15,7 @@ buildscript {
 apply plugin: 'org.openbakery.xcode-plugin'
 
 xcodebuild {
+    type = 'macOS'
     target = 'Butler'
     // https://github.com/openbakery/gradle-xcodePlugin/issues/361
     bundleName = 'Butler'
