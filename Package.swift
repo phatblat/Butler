@@ -12,11 +12,24 @@ let package = Package(
 )
 
 package.exclude = [
-    "bin",
-    "Butler.xcworkspace",
-    "Docs",
-    "Example",
-    "gradle"
+    "Butler.podspec",
+    "Butler.xcodeproj/",
+    "Butler.xcworkspace/",
+    "Docs/",
+    "Example/",
+    "Gemfile",
+    "Gemfile.lock",
+    "LICENSE",
+    "Package.pins",
+    "Package.swift",
+    "Podfile",
+    "Podfile.lock",
+    "Pods/",
+    "README.md",
+    "bin/",
+    "build.gradle",
+    "gradle/",
+    "gradlew",
 ]
 
 // testDependencies temporarily removed
