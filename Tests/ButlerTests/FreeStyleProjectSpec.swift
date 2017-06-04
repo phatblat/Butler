@@ -35,6 +35,9 @@ class FreeStyleProjectSpec: QuickSpec {
             it("is buildable") {
                 expect(json["buildable"]) == true
             }
+            it("is blue") {
+                expect(json["color"]) == "blue"
+            }
             it("is not concurrent") {
                 expect(json["concurrentBuild"]) == false
             }
