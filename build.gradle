@@ -119,5 +119,6 @@ task buildAll {
     description 'Runs all types of builds.'
     dependsOn xcode
     dependsOn cocoapods
-    dependsOn spm
+    // TEMP: SPM disabled due to issues with Quick tests
+    //dependsOn spm
 }
