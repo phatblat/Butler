@@ -284,9 +284,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_29 /* SwiftyJSON */,
 				OBJ_36 /* Butler */,
 				OBJ_47 /* ButlerTests */,
+				OBJ_29 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
