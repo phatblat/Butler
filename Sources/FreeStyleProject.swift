@@ -9,8 +9,17 @@
 import SwiftyJSON
 import Foundation
 
+// MARK: - Storage & Init
+
+/**
+    A basic Jenkins Job.
+
+    - Since: 0.1
+ */
 struct FreeStyleProject {
+    /// Fuly qualified name of the correspinding Java class in Jenkins.
     let _class: String
+    /// URL to this resource.
     let url: URL
 
     let buildable: Bool
@@ -46,7 +55,15 @@ struct FreeStyleProject {
 }
 
 extension FreeStyleProject {
+    /**
+        Failable initializer which accepts a parsed `JSONDictionary`.
+        Fails if any of the required properties are missing from the
+        dictionary.
+
+        - Since: 0.1
+     */
     init?(json plainJson: JSONDictionary) {
+        // Wrap with SwiftyJSON
         let json = JSON(plainJson)
 
         // Required properties

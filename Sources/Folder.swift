@@ -9,8 +9,17 @@
 import SwiftyJSON
 import Foundation
 
+// MARK: - Storage & Init
+
+/**
+    A folder containing zero or more Jobs.
+
+    - Since: 0.1
+ */
 struct Folder {
+    /// Fuly qualified name of the correspinding Java class in Jenkins.
     let _class: String
+    /// URL to this resource.
     let url: URL
 
     let description: String?
@@ -28,7 +37,15 @@ struct Folder {
 }
 
 extension Folder {
+    /**
+        Failable initializer which accepts a parsed `JSONDictionary`.
+        Fails if any of the required properties are missing from the 
+        dictionary.
+
+        - Since: 0.1
+     */
     init?(json plainJson: JSONDictionary) {
+        // Wrap with SwiftyJSON
         let json = JSON(plainJson)
 
         // Required properties
