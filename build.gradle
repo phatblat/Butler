@@ -3,6 +3,25 @@
  * Butler
  */
 
+buildscript {
+    repositories {
+        maven { url('http://repository.openbakery.org/') }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'org.openbakery', name: 'xcode-plugin', version: '+'
+    }
+}
+apply plugin: 'org.openbakery.xcode-plugin'
+
+xcodebuild {
+    type = 'macOS'
+    scheme = 'Butler'
+    target = 'Butler'
+    // https://github.com/openbakery/gradle-xcodePlugin/issues/361
+    bundleName = 'Butler'
+}
+
 ext {
     if (project.hasProperty('verbose')) {
         verbose = project.verbose.toBoolean()
@@ -30,7 +49,6 @@ task bundleInstall(type: Exec) {
 
 task podLibLint(type: Exec) {
     dependsOn bundleInstall
-
     String command = 'bundle exec pod lib lint'
     if (verbose) {
         command += ' --verbose'
@@ -53,6 +71,11 @@ task spmDependencies(type: Exec) {
     commandLine 'swift package show-dependencies'.tokenize()
 }
 
+task swiftFetchDependencies(type: Exec) {
+    String command = 'swift package fetch'
+    commandLine command.tokenize()
+}
+
 task swiftBuild(type: Exec) {
     String command = 'swift build'
     if (verbose) {
@@ -71,11 +94,21 @@ task swiftTest(type: Exec) {
 
 /* Top-Level Tasks for CI */
 
+task xcode {
+    description 'Builds and runs tests using xcodebuild.'
+    tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
+    tasks.getByName('xcodebuild').dependsOn swiftFetchDependencies
+    dependsOn 'build'
+    dependsOn 'test'
+}
+
 task cocoapods {
+    description 'Builds and lints the library as a CocoaPod.'
     dependsOn podLibLint
 }
 
 task spm {
+    description 'Builds and runs tests using the Swift Package Manager.'
     dependsOn spmDescribe
     dependsOn spmDependencies
     dependsOn swiftBuild
@@ -83,6 +116,9 @@ task spm {
 }
 
 task buildAll {
+    description 'Runs all types of builds.'
+    dependsOn xcode
     dependsOn cocoapods
-    dependsOn spm
+    // TEMP: SPM disabled due to issues with Quick tests
+    //dependsOn spm
 }

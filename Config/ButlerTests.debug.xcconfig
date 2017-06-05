@@ -1,0 +1,5 @@
+#include "Pods/Target Support Files/Pods-ButlerTests/Pods-ButlerTests.debug.xcconfig"
+#include "Universal.xcconfig"
+
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks
+//FRAMEWORK_SEARCH_PATHS = $(SDKROOT) $(inherited)

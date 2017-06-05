@@ -1,0 +1,76 @@
+{
+  "_class": "com.cloudbees.hudson.plugins.folder.Folder",
+  "actions": [
+    {},
+    {
+      "_class": "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    }
+  ],
+  "description": null,
+  "displayName": "Job Types",
+  "displayNameOrNull": null,
+  "fullDisplayName": "Job Types",
+  "fullName": "Job Types",
+  "healthReport": [],
+  "jobs": [
+    {
+      "_class": "hudson.model.ExternalJob",
+      "color": "notbuilt",
+      "name": "External Job",
+      "url": "http://jenkins.log-g.co/job/Job%20Types/job/External%20Job/"
+    },
+    {
+      "_class": "com.cloudbees.hudson.plugins.folder.Folder",
+      "name": "Folder",
+      "url": "http://jenkins.log-g.co/job/Job%20Types/job/Folder/"
+    },
+    {
+      "_class": "hudson.model.FreeStyleProject",
+      "color": "notbuilt",
+      "name": "Freestyle Project",
+      "url": "http://jenkins.log-g.co/job/Job%20Types/job/Freestyle%20Project/"
+    },
+    {
+      "_class": "jenkins.branch.OrganizationFolder",
+      "name": "GitHub Organization",
+      "url": "http://jenkins.log-g.co/job/Job%20Types/job/GitHub%20Organization/"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "color": "notbuilt",
+      "name": "Maven",
+      "url": "http://jenkins.log-g.co/job/Job%20Types/job/Maven/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixProject",
+      "color": "notbuilt",
+      "name": "Multi-configuration Project",
+      "url": "http://jenkins.log-g.co/job/Job%20Types/job/Multi-configuration%20Project/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject",
+      "name": "Multibranch Pipeline",
+      "url": "http://jenkins.log-g.co/job/Job%20Types/job/Multibranch%20Pipeline/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowJob",
+      "color": "notbuilt",
+      "name": "Pipeline",
+      "url": "http://jenkins.log-g.co/job/Job%20Types/job/Pipeline/"
+    }
+  ],
+  "name": "Job Types",
+  "primaryView": {
+    "_class": "hudson.model.AllView",
+    "name": "All",
+    "url": "http://jenkins.log-g.co/job/Job%20Types/"
+  },
+  "url": "http://jenkins.log-g.co/job/Job%20Types/",
+  "views": [
+    {
+      "_class": "hudson.model.AllView",
+      "name": "All",
+      "url": "http://jenkins.log-g.co/job/Job%20Types/"
+    }
+  ]
+}

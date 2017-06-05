@@ -1,0 +1,38 @@
+{
+  "_class": "jenkins.branch.OrganizationFolder",
+  "actions": [
+    {},
+    {
+      "_class": "jenkins.scm.api.metadata.ObjectMetadataAction"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.github_branch_source.GitHubOrgMetadataAction"
+    },
+    {},
+    {},
+    {
+      "_class": "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    }
+  ],
+  "description": null,
+  "displayName": "GitHub Organization",
+  "displayNameOrNull": null,
+  "fullDisplayName": "Job Types » GitHub Organization",
+  "fullName": "Job Types/GitHub Organization",
+  "healthReport": [],
+  "jobs": [],
+  "name": "GitHub Organization",
+  "primaryView": {
+    "_class": "jenkins.branch.OrganizationFolderEmptyView",
+    "name": "welcome",
+    "url": "http://jenkins.log-g.co/job/Job%20Types/job/GitHub%20Organization/"
+  },
+  "url": "http://jenkins.log-g.co/job/Job%20Types/job/GitHub%20Organization/",
+  "views": [
+    {
+      "_class": "jenkins.branch.OrganizationFolderViewHolder$ViewImpl",
+      "name": "default",
+      "url": "http://jenkins.log-g.co/job/Job%20Types/job/GitHub%20Organization/view/default/"
+    }
+  ]
+}

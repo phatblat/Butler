@@ -1,0 +1,78 @@
+{
+  "_class": "hudson.model.FreeStyleProject",
+  "actions": [
+    {},
+    {},
+    {
+      "_class": "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    }
+  ],
+  "buildable": true,
+  "builds": [
+    {
+      "_class": "hudson.model.FreeStyleBuild",
+      "number": 2,
+      "url": "http://mini.log-g.co/jenkins/job/whoami/2/"
+    },
+    {
+      "_class": "hudson.model.FreeStyleBuild",
+      "number": 1,
+      "url": "http://mini.log-g.co/jenkins/job/whoami/1/"
+    }
+  ],
+  "color": "blue",
+  "concurrentBuild": false,
+  "description": "",
+  "displayName": "whoami",
+  "displayNameOrNull": null,
+  "downstreamProjects": [],
+  "firstBuild": {
+    "_class": "hudson.model.FreeStyleBuild",
+    "number": 1,
+    "url": "http://mini.log-g.co/jenkins/job/whoami/1/"
+  },
+  "fullDisplayName": "whoami",
+  "fullName": "whoami",
+  "healthReport": [
+    {
+      "description": "Build stability: No recent builds failed.",
+      "iconClassName": "icon-health-80plus",
+      "iconUrl": "health-80plus.png",
+      "score": 100
+    }
+  ],
+  "inQueue": false,
+  "keepDependencies": false,
+  "lastBuild": {
+    "_class": "hudson.model.FreeStyleBuild",
+    "number": 2,
+    "url": "http://mini.log-g.co/jenkins/job/whoami/2/"
+  },
+  "lastCompletedBuild": {
+    "_class": "hudson.model.FreeStyleBuild",
+    "number": 2,
+    "url": "http://mini.log-g.co/jenkins/job/whoami/2/"
+  },
+  "lastFailedBuild": null,
+  "lastStableBuild": {
+    "_class": "hudson.model.FreeStyleBuild",
+    "number": 2,
+    "url": "http://mini.log-g.co/jenkins/job/whoami/2/"
+  },
+  "lastSuccessfulBuild": {
+    "_class": "hudson.model.FreeStyleBuild",
+    "number": 2,
+    "url": "http://mini.log-g.co/jenkins/job/whoami/2/"
+  },
+  "lastUnstableBuild": null,
+  "lastUnsuccessfulBuild": null,
+  "name": "whoami",
+  "nextBuildNumber": 3,
+  "property": [],
+  "queueItem": null,
+  "scm": {
+    "_class": "hudson.scm.NullSCM"
+  },
+  "upstreamProjects": [],
+  "url": "http://mini.log-g.co/jenkins/job/whoami/"
+}
