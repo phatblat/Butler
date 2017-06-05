@@ -33,6 +33,43 @@ class FolderSpec: QuickSpec {
             it("has a url") {
                 expect(project.url) == URL(string: "http://jenkins.log-g.co/job/Job%20Types/")
             }
+            it("has an empty description") {
+                expect(project.description).to(beNil())
+            }
+            it("has a name") {
+                expect(project.name) == "Job Types"
+            }
+            it("has a full name") {
+                expect(project.fullName) == "Job Types"
+            }
+            it("has a display name") {
+                expect(project.displayName) == "Job Types"
+            }
+            it("has a display name or null?") {
+                expect(project.displayNameOrNull).to(beNil())
+            }
+            it("has a full display name") {
+                expect(project.fullDisplayName) == "Job Types"
+            }
+            it("has 8 jobs") {
+                expect(project.jobs.count) == 8
+            }
+            it("has no health reports") {
+                expect(project.healthReport).notTo(beNil())
+                expect(project.healthReport.count) == 0
+            }
+            it("has a primary view") {
+                expect(project.primaryView) == "All"
+            }
+            it("has a view") {
+                expect(project.views).notTo(beNil())
+                expect(project.views.count) == 1
+            }
+            it("has actions") {
+                expect(project.actions).notTo(beNil())
+                expect(project.actions.count) == 2
+                expect(project.actions[1]) == "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+            }
         }
     }
 }
