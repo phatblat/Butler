@@ -12,15 +12,6 @@ buildscript {
         classpath group: 'org.openbakery', name: 'xcode-plugin', version: '+'
     }
 }
-apply plugin: 'org.openbakery.xcode-plugin'
-
-xcodebuild {
-    type = 'macOS'
-    scheme = 'Butler'
-    target = 'Butler'
-    // https://github.com/openbakery/gradle-xcodePlugin/issues/361
-    bundleName = 'Butler'
-}
 
 ext {
     if (project.hasProperty('verbose')) {
@@ -33,6 +24,19 @@ ext {
 if (System.env.JENKINS_URL) {
     println "Running on jenkins"
     ext.verbose = true
+}
+
+/* xcodePlugin */
+
+apply plugin: 'org.openbakery.xcode-plugin'
+
+xcodebuild {
+    version = '9'
+    type = 'macOS'
+    scheme = 'Butler'
+    target = 'Butler'
+    // https://github.com/openbakery/gradle-xcodePlugin/issues/361
+    bundleName = 'Butler'
 }
 
 /* Bundler */
