@@ -19,6 +19,8 @@ ext {
     } else {
         verbose = false
     }
+
+    xcodePath = 'DEVELOPER_DIR=/Applications/Xcode-9.app '
 }
 
 if (System.env.JENKINS_URL) {
@@ -40,7 +42,7 @@ xcodebuild {
 }
 
 task xcodeVersion(type: Exec) {
-    String command = 'DEVELOPER_DIR=/Applications/Xcode9-beta1.app xcodebuild -version'
+    String command =  xcodePath + 'xcodebuild -version'
     if (!System.env.JENKINS_URL) {
         // Assuming fish shell if not a jenkins build
         command = 'env ' + command
