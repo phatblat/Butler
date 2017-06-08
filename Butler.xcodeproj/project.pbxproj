@@ -643,7 +643,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8E8A28D1EE2583F007F96A5 /* ButlerTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -662,7 +661,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8E8A28E1EE2583F007F96A5 /* ButlerTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
