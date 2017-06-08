@@ -20,7 +20,7 @@ ext {
         verbose = false
     }
 
-    xcodePath = 'DEVELOPER_DIR=/Applications/Xcode-9.app '
+    xcodePath = 'env DEVELOPER_DIR=/Applications/Xcode-9.app '
 }
 
 if (System.env.JENKINS_URL) {
@@ -43,10 +43,6 @@ xcodebuild {
 
 task xcodeVersion(type: Exec) {
     String command =  xcodePath + 'xcodebuild -version'
-    if (!System.env.JENKINS_URL) {
-        // Assuming fish shell if not a jenkins build
-        command = 'env ' + command
-    }
     commandLine command.tokenize()
 }
 
@@ -65,10 +61,6 @@ task bundleInstall(type: Exec) {
 task podLibLint(type: Exec) {
     dependsOn bundleInstall
     String command = xcodePath + 'bundle exec pod lib lint'
-    if (!System.env.JENKINS_URL) {
-        // Assuming fish shell if not a jenkins build
-        command = 'env ' + command
-    }
     if (verbose) {
         command += ' --verbose'
     }
