@@ -91,7 +91,7 @@ task spmDependencies(type: Exec) {
 }
 
 task swiftFetchDependencies(type: Exec) {
-    String command = 'swift package fetch'
+    String command = 'swift package resolve'
     commandLine command.tokenize()
 }
 
