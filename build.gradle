@@ -130,6 +130,7 @@ task spm {
     description 'Builds and runs tests using the Swift Package Manager.'
     dependsOn spmDescribe
     dependsOn spmDependencies
+    dependsOn swiftFetchDependencies
     dependsOn swiftBuild
     dependsOn swiftTest
 }
