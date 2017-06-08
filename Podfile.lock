@@ -3,13 +3,29 @@ PODS:
   - Quick (1.1.0)
 
 DEPENDENCIES:
-  - Nimble
-  - Quick
+  - Nimble (from `git@github.com:phatblat/Nimble.git`, branch `swift4`)
+  - Quick (from `git@github.com:phatblat/Quick.git`, branch `swift4`)
+
+EXTERNAL SOURCES:
+  Nimble:
+    :branch: swift4
+    :git: git@github.com:phatblat/Nimble.git
+  Quick:
+    :branch: swift4
+    :git: git@github.com:phatblat/Quick.git
+
+CHECKOUT OPTIONS:
+  Nimble:
+    :commit: 1f690d47aa9db899ba8e7e5280f1fa756fcdd27e
+    :git: git@github.com:phatblat/Nimble.git
+  Quick:
+    :commit: 717bae6d6cb1267c5cc366dc8cb6cf80691081e2
+    :git: git@github.com:phatblat/Quick.git
 
 SPEC CHECKSUMS:
-  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
-  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  Nimble: f8cda7a16ec2180b57905dd50b28127220f66a17
+  Quick: 4700beb8056662b579facd79eaca7f04fb3d48e6
 
-PODFILE CHECKSUM: 351b453147fa2dd6c7b61d2794a1ba3d9a4bd064
+PODFILE CHECKSUM: e729666bb6c25a27ea3cbd639e8321753dbda5b1
 
 COCOAPODS: 1.2.1
