@@ -13,11 +13,13 @@ struct MatrixProject: Codable {
     let buildable: Bool
     let builds: [MatrixBuild]
     let color: String?
+    let concurrentBuild: Bool
     let description: String?
     let displayName: String?
     let displayNameOrNull: String?
     let downstreamProjects: [String]
     let firstBuild: MatrixBuild?
+    
     let fullDisplayName: String
     let fullName: String
     let healthReport: [HealthReport]
@@ -34,5 +36,6 @@ struct MatrixProject: Codable {
     let nextBuildNumber: Int
     let property: [JobProperty]
     let queueItem: String?
+    let upstreamProjects: [String]
     let url: URL
 }
