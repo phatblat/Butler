@@ -17,6 +17,13 @@
 		F8AFBE2D1EEB2BAE0027C8D2 /* FreeStyleBuildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A9FCDD1EEB2A35008EC173 /* FreeStyleBuildSpec.swift */; };
 		F8AFBE2F1EEB2CAC0027C8D2 /* HealthReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE2E1EEB2CAC0027C8D2 /* HealthReport.swift */; };
 		F8AFBE311EEB2CE40027C8D2 /* HealthReportSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE301EEB2CE40027C8D2 /* HealthReportSpec.swift */; };
+		F8AFBE371EEB30840027C8D2 /* JobConfigurationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE361EEB30840027C8D2 /* JobConfigurationSpec.swift */; };
+		F8AFBE3A1EEB31780027C8D2 /* MatrixBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE381EEB31720027C8D2 /* MatrixBuild.swift */; };
+		F8AFBE3D1EEB318A0027C8D2 /* MatrixBuildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE3C1EEB318A0027C8D2 /* MatrixBuildSpec.swift */; };
+		F8AFBE491EEB32160027C8D2 /* JobConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE341EEB305C0027C8D2 /* JobConfiguration.swift */; };
+		F8AFBE4A1EEB33FE0027C8D2 /* MatrixProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE321EEB2FFE0027C8D2 /* MatrixProject.swift */; };
+		F8AFBE4E1EEB34CF0027C8D2 /* JobPropertySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE4D1EEB34CF0027C8D2 /* JobPropertySpec.swift */; };
+		F8AFBE4F1EEB35320027C8D2 /* JobProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE4B1EEB34860027C8D2 /* JobProperty.swift */; };
 		F8B7158B1EE39329006404A5 /* FreeStyleProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7158A1EE39329006404A5 /* FreeStyleProject.swift */; };
 		F8B7158D1EE4EE94006404A5 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7158C1EE4EE94006404A5 /* Folder.swift */; };
 		F8B7158F1EE4EEB8006404A5 /* FolderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7158E1EE4EEB8006404A5 /* FolderSpec.swift */; };
@@ -66,6 +73,13 @@
 		F8A9FCDD1EEB2A35008EC173 /* FreeStyleBuildSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeStyleBuildSpec.swift; sourceTree = "<group>"; };
 		F8AFBE2E1EEB2CAC0027C8D2 /* HealthReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthReport.swift; sourceTree = "<group>"; };
 		F8AFBE301EEB2CE40027C8D2 /* HealthReportSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthReportSpec.swift; sourceTree = "<group>"; };
+		F8AFBE321EEB2FFE0027C8D2 /* MatrixProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixProject.swift; sourceTree = "<group>"; };
+		F8AFBE341EEB305C0027C8D2 /* JobConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobConfiguration.swift; sourceTree = "<group>"; };
+		F8AFBE361EEB30840027C8D2 /* JobConfigurationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobConfigurationSpec.swift; sourceTree = "<group>"; };
+		F8AFBE381EEB31720027C8D2 /* MatrixBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixBuild.swift; sourceTree = "<group>"; };
+		F8AFBE3C1EEB318A0027C8D2 /* MatrixBuildSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixBuildSpec.swift; sourceTree = "<group>"; };
+		F8AFBE4B1EEB34860027C8D2 /* JobProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobProperty.swift; sourceTree = "<group>"; };
+		F8AFBE4D1EEB34CF0027C8D2 /* JobPropertySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobPropertySpec.swift; sourceTree = "<group>"; };
 		F8B7158A1EE39329006404A5 /* FreeStyleProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeStyleProject.swift; sourceTree = "<group>"; };
 		F8B7158C1EE4EE94006404A5 /* Folder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		F8B7158E1EE4EEB8006404A5 /* FolderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderSpec.swift; sourceTree = "<group>"; };
@@ -164,8 +178,11 @@
 				F82D300F1EEA19A800903689 /* ExternalJobSpec.swift */,
 				F8B7158E1EE4EEB8006404A5 /* FolderSpec.swift */,
 				F8A9FCDD1EEB2A35008EC173 /* FreeStyleBuildSpec.swift */,
-				F8AFBE301EEB2CE40027C8D2 /* HealthReportSpec.swift */,
 				OBJ_14 /* FreeStyleProjectSpec.swift */,
+				F8AFBE301EEB2CE40027C8D2 /* HealthReportSpec.swift */,
+				F8AFBE361EEB30840027C8D2 /* JobConfigurationSpec.swift */,
+				F8AFBE4D1EEB34CF0027C8D2 /* JobPropertySpec.swift */,
+				F8AFBE3C1EEB318A0027C8D2 /* MatrixBuildSpec.swift */,
 			);
 			name = ButlerTests;
 			path = Tests/ButlerTests;
@@ -228,7 +245,11 @@
 				F8B7158A1EE39329006404A5 /* FreeStyleProject.swift */,
 				F8AFBE2E1EEB2CAC0027C8D2 /* HealthReport.swift */,
 				OBJ_9 /* Jenkins.swift */,
+				F8AFBE341EEB305C0027C8D2 /* JobConfiguration.swift */,
+				F8AFBE4B1EEB34860027C8D2 /* JobProperty.swift */,
 				F8568A551EE4C7B0005241ED /* JSONDictionary.swift */,
+				F8AFBE381EEB31720027C8D2 /* MatrixBuild.swift */,
+				F8AFBE321EEB2FFE0027C8D2 /* MatrixProject.swift */,
 				OBJ_10 /* User.swift */,
 			);
 			path = Sources;
@@ -436,9 +457,13 @@
 			files = (
 				F8568A561EE4C7B0005241ED /* JSONDictionary.swift in Sources */,
 				OBJ_41 /* Butler.swift in Sources */,
+				F8AFBE4A1EEB33FE0027C8D2 /* MatrixProject.swift in Sources */,
 				F8A9FCDC1EEB29E0008EC173 /* FreeStyleBuild.swift in Sources */,
+				F8AFBE3A1EEB31780027C8D2 /* MatrixBuild.swift in Sources */,
 				F82D300E1EEA191D00903689 /* ExternalJob.swift in Sources */,
 				OBJ_42 /* Jenkins.swift in Sources */,
+				F8AFBE491EEB32160027C8D2 /* JobConfiguration.swift in Sources */,
+				F8AFBE4F1EEB35320027C8D2 /* JobProperty.swift in Sources */,
 				F8B7158B1EE39329006404A5 /* FreeStyleProject.swift in Sources */,
 				OBJ_43 /* User.swift in Sources */,
 				F8B7158D1EE4EE94006404A5 /* Folder.swift in Sources */,
@@ -451,11 +476,14 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_52 /* ButlerTests.swift in Sources */,
+				F8AFBE3D1EEB318A0027C8D2 /* MatrixBuildSpec.swift in Sources */,
 				F82D30111EEA19A800903689 /* ExternalJobSpec.swift in Sources */,
+				F8AFBE371EEB30840027C8D2 /* JobConfigurationSpec.swift in Sources */,
 				F8AFBE2D1EEB2BAE0027C8D2 /* FreeStyleBuildSpec.swift in Sources */,
 				F8B7158F1EE4EEB8006404A5 /* FolderSpec.swift in Sources */,
 				F8AFBE311EEB2CE40027C8D2 /* HealthReportSpec.swift in Sources */,
 				OBJ_53 /* FreeStyleProjectSpec.swift in Sources */,
+				F8AFBE4E1EEB34CF0027C8D2 /* JobPropertySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
