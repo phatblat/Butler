@@ -30,7 +30,7 @@ class FolderSpec: QuickSpec {
                 expect(project._class) == "com.cloudbees.hudson.plugins.folder.Folder"
             }
             it("has a url") {
-                expect(project.url) == "http://jenkins.log-g.co/job/Job%20Types/"
+                expect(project.url) == URL(string: "http://jenkins.log-g.co/job/Job%20Types/")
             }
             it("has an empty description") {
                 expect(project.description).to(beNil())

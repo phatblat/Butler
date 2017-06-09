@@ -30,7 +30,7 @@ class ExternalJobSpec: QuickSpec {
                 expect(job._class) == "hudson.model.ExternalJob"
             }
             it("has a url") {
-                expect(job.url) == "http://jenkins.log-g.co/job/Job%20Types/job/External%20Job/"
+                expect(job.url) == URL(string: "http://jenkins.log-g.co/job/Job%20Types/job/External%20Job/")
             }
             it("is buildable") {
                 expect(job.buildable) == false

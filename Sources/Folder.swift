@@ -18,7 +18,7 @@ import Foundation
 struct Folder: Codable {
     /// Fuly qualified name of the correspinding Java class in Jenkins.
     let _class: String
-    var actions: [Dictionary<String, String>]
+    let actions: [Dictionary<String, String>]
     let description: String?
     let displayName: String
     let displayNameOrNull: String?
@@ -29,5 +29,5 @@ struct Folder: Codable {
     let name: String
     let primaryView: Dictionary<String, String>
     let views: [Dictionary<String, String>]
-    let url: String
+    let url: URL
 }

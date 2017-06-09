@@ -8,30 +8,30 @@
 import Foundation
 
 struct ExternalJob: Codable {
-    var _class: String?
-    var actions: [Dictionary<String, String>]
-    var buildable: Bool
-    var builds: [String]
-    var color: String?
-    var description: String?
-    var displayName: String?
-    var displayNameOrNull: String?
-    var firstBuild: String?
-    var fullDisplayName: String?
-    var fullName: String?
-    var healthReport: [String]
-    var inQueue: Bool
-    var keepDependencies: Bool
-    var lastBuild: String?
-    var lastCompletedBuild: String?
-    var lastFailedBuild: String?
-    var lastStableBuild: String?
-    var lastSuccessfulBuild: String?
-    var lastUnstableBuild: String?
-    var lastUnsuccessfulBuild: String?
-    var name: String?
-    var nextBuildNumber: Int
-    var property: [String]
-    var queueItem: String?
-    var url: String?
+    let _class: String
+    let actions: [Dictionary<String, String>]
+    let buildable: Bool
+    let builds: [String]
+    let color: String?
+    let description: String?
+    let displayName: String?
+    let displayNameOrNull: String?
+    let firstBuild: String?
+    let fullDisplayName: String?
+    let fullName: String?
+    let healthReport: [String]
+    let inQueue: Bool
+    let keepDependencies: Bool
+    let lastBuild: String?
+    let lastCompletedBuild: String?
+    let lastFailedBuild: String?
+    let lastStableBuild: String?
+    let lastSuccessfulBuild: String?
+    let lastUnstableBuild: String?
+    let lastUnsuccessfulBuild: String?
+    let name: String?
+    let nextBuildNumber: Int
+    let property: [String]
+    let queueItem: String?
+    let url: URL
 }
