@@ -21,17 +21,16 @@ class FolderSpec: QuickSpec {
                 let url = bundle.url(forResource: jsonFile.deletingPathExtension,
                                      withExtension: jsonFile.pathExtension,
                                      subdirectory: "JSON/Job")!
-                let data = NSData(contentsOf: url)!
-
-                let json = try! JSONSerialization.jsonObject(with: data as Data, options: []) as! JSONDictionary
-                project = Folder(json: json)
+                let data = try! Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                project = try! decoder.decode(Folder.self, from: data)
             }
 
             it("has class") {
                 expect(project._class) == "com.cloudbees.hudson.plugins.folder.Folder"
             }
             it("has a url") {
-                expect(project.url) == URL(string: "http://jenkins.log-g.co/job/Job%20Types/")
+                expect(project.url) == "http://jenkins.log-g.co/job/Job%20Types/"
             }
             it("has an empty description") {
                 expect(project.description).to(beNil())
@@ -59,7 +58,7 @@ class FolderSpec: QuickSpec {
                 expect(project.healthReport.count) == 0
             }
             it("has a primary view") {
-                expect(project.primaryView) == "All"
+                expect(project.primaryView["name"]) == "All"
             }
             it("has a view") {
                 expect(project.views).notTo(beNil())
@@ -68,7 +67,7 @@ class FolderSpec: QuickSpec {
             it("has actions") {
                 expect(project.actions).notTo(beNil())
                 expect(project.actions.count) == 2
-                expect(project.actions[1]) == "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+                expect(project.actions.last!["_class"]) == "com.cloudbees.plugins.credentials.ViewCredentialsAction"
             }
         }
     }
