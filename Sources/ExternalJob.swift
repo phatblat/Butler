@@ -9,7 +9,7 @@ import Foundation
 
 struct ExternalJob: Codable {
     var _class: String?
-//    var actions: String?
+    var actions: [Dictionary<String, String>]
     var buildable: Bool
     var builds: [String]
     var color: String?

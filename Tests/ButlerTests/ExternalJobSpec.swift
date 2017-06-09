@@ -96,6 +96,10 @@ class ExternalJobSpec: QuickSpec {
             it("does not have a last unsuccessful build") {
                 expect(job.lastUnsuccessfulBuild).to(beNil())
             }
+            it("has some actions") {
+                expect(job.actions.count) == 3
+                expect(job.actions.last!["_class"]) == "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+            }
         }
     }
 }
