@@ -13,6 +13,8 @@ buildscript {
     }
 }
 
+String taskGroup = 'zzz Butler'
+
 ext {
     if (project.hasProperty('verbose')) {
         verbose = project.verbose.toBoolean()
@@ -42,6 +44,8 @@ xcodebuild {
 }
 
 task xcodeVersion(type: Exec) {
+    description 'Prints the version of Xcode used by the build.'
+    group taskGroup
     String command =  xcodePath + 'xcodebuild -version'
     commandLine command.tokenize()
 }
@@ -49,6 +53,8 @@ task xcodeVersion(type: Exec) {
 /* Bundler */
 
 task bundleInstall(type: Exec) {
+    description 'Installs ruby gems using Bundler.'
+    group taskGroup
     String command = 'bundle install'
     if (!verbose) {
         command += ' --quiet'
@@ -59,6 +65,8 @@ task bundleInstall(type: Exec) {
 /* CocoaPods */
 
 task podLibLint(type: Exec) {
+    description 'Builds and lints the library as a CocoaPods.'
+    group taskGroup
     dependsOn bundleInstall
     String command = xcodePath + 'bundle exec pod lib lint'
     if (verbose) {
@@ -70,24 +78,34 @@ task podLibLint(type: Exec) {
 /* Swift Package Manager */
 
 task xcodeGenerate(type: Exec) {
+    description '(Re)generates the Xcode project based on the Swift package definition.'
+    group taskGroup
     description 'Generates an Xcode project'
     commandLine 'swift package generate-xcodeproj'.tokenize()
 }
 
 task spmDescribe(type: Exec) {
+    description 'Shows a summary of the Swift package.'
+    group taskGroup
     commandLine 'swift package describe'.tokenize()
 }
 
 task spmDependencies(type: Exec) {
+    description 'Shows dependencies of the Swift package.'
+    group taskGroup
     commandLine 'swift package show-dependencies'.tokenize()
 }
 
 task swiftFetchDependencies(type: Exec) {
+    description 'Downloads dependencies.'
+    group taskGroup
     String command = 'swift package resolve'
     commandLine command.tokenize()
 }
 
 task swiftBuild(type: Exec) {
+    description 'Builds the library using the swift compiler.'
+    group taskGroup
     String command = 'swift build'
     if (verbose) {
         command += ' --verbose'
@@ -96,6 +114,8 @@ task swiftBuild(type: Exec) {
 }
 
 task swiftTest(type: Exec) {
+    description 'Runs the tests (broken).'
+    group taskGroup
     String command = 'swift test'
     if (verbose) {
         command += ' --verbose'
@@ -107,6 +127,7 @@ task swiftTest(type: Exec) {
 
 task xcode {
     description 'Builds and runs tests using xcodebuild.'
+    group taskGroup
     tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
     tasks.getByName('xcodebuild').dependsOn swiftFetchDependencies
     dependsOn 'build'
@@ -115,11 +136,13 @@ task xcode {
 
 task cocoapods {
     description 'Builds and lints the library as a CocoaPod.'
+    group taskGroup
     dependsOn podLibLint
 }
 
 task spm {
     description 'Builds and runs tests using the Swift Package Manager.'
+    group taskGroup
     dependsOn spmDescribe
     dependsOn spmDependencies
     dependsOn swiftFetchDependencies
@@ -129,6 +152,7 @@ task spm {
 
 task buildAll {
     description 'Runs all types of builds.'
+    group taskGroup
     dependsOn xcode
     dependsOn cocoapods
     // TEMP: SPM disabled due to issues with Quick tests
