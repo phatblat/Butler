@@ -26,7 +26,7 @@ class JobPropertySpec: QuickSpec {
             }
 
             it("has class") {
-                expect(property._class) == "jenkins.model.BuildDiscarderProperty"
+                expect(property._class) == JavaClass.buildDiscarderProperty
             }
         }
     }

@@ -8,5 +8,5 @@
 import Foundation
 
 struct JobProperty: Codable {
-    let _class: String
+    let _class: JavaClass
 }

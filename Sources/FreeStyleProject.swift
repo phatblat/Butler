@@ -17,7 +17,7 @@ import Foundation
  */
 struct FreeStyleProject: Codable {
     /// Fully qualified name of the correspinding Java class in Jenkins.
-    let _class: String
+    let _class: JavaClass
     let actions: [Dictionary<String, String>]
     let buildable: Bool
     let builds: [FreeStyleBuild]

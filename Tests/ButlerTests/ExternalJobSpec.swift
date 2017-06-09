@@ -27,7 +27,7 @@ class ExternalJobSpec: QuickSpec {
             }
 
             it("has class") {
-                expect(job._class) == "hudson.model.ExternalJob"
+                expect(job._class) == JavaClass.externalJob
             }
             it("has a url") {
                 expect(job.url) == URL(string: "http://jenkins.log-g.co/job/Job%20Types/job/External%20Job/")

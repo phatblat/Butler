@@ -8,7 +8,7 @@
 import Foundation
 
 struct FreeStyleBuild: Codable {
-    let _class: String
+    let _class: JavaClass
     let number: Int
     let url: URL
 }

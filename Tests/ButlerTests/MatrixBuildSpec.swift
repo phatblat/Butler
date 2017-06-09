@@ -26,7 +26,7 @@ class MatrixBuildSpec: QuickSpec {
             }
 
             it("has class") {
-                expect(build._class) == "hudson.matrix.MatrixBuild"
+                expect(build._class) == JavaClass.matrixBuild
             }
             it("has a number") {
                 expect(build.number) == 13

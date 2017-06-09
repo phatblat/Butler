@@ -8,7 +8,7 @@
 import Foundation
 
 struct ExternalJob: Codable {
-    let _class: String
+    let _class: JavaClass
     let actions: [Dictionary<String, String>]
     let buildable: Bool
     let builds: [String]

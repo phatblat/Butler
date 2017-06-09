@@ -26,7 +26,7 @@ class MatrixProjectSpec: QuickSpec {
             }
 
             it("has class") {
-                expect(job._class) == "hudson.matrix.MatrixProject"
+                expect(job._class) == JavaClass.matrixProject
             }
             it("has active configurations") {
                 expect(job.activeConfigurations.count) == 2

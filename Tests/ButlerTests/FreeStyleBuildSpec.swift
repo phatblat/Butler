@@ -27,7 +27,7 @@ class FreeStyleBuildSpec: QuickSpec {
             }
 
             it("has class") {
-                expect(build._class) == "hudson.model.FreeStyleBuild"
+                expect(build._class) == JavaClass.freestyleBuild
             }
             it("has a number") {
                 expect(build.number) == 2

@@ -23,6 +23,7 @@
 		F8AFBE491EEB32160027C8D2 /* JobConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE341EEB305C0027C8D2 /* JobConfiguration.swift */; };
 		F8AFBE4E1EEB34CF0027C8D2 /* JobPropertySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE4D1EEB34CF0027C8D2 /* JobPropertySpec.swift */; };
 		F8AFBE4F1EEB35320027C8D2 /* JobProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE4B1EEB34860027C8D2 /* JobProperty.swift */; };
+		F8AFBE521EEB376B0027C8D2 /* JavaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE501EEB365C0027C8D2 /* JavaClass.swift */; };
 		F8B049BB1EEB46A700D5DFEC /* MatrixProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE321EEB2FFE0027C8D2 /* MatrixProject.swift */; };
 		F8B049BC1EEB46AB00D5DFEC /* MatrixProjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFBE531EEB3A150027C8D2 /* MatrixProjectSpec.swift */; };
 		F8B7158B1EE39329006404A5 /* FreeStyleProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7158A1EE39329006404A5 /* FreeStyleProject.swift */; };
@@ -81,6 +82,7 @@
 		F8AFBE3C1EEB318A0027C8D2 /* MatrixBuildSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixBuildSpec.swift; sourceTree = "<group>"; };
 		F8AFBE4B1EEB34860027C8D2 /* JobProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobProperty.swift; sourceTree = "<group>"; };
 		F8AFBE4D1EEB34CF0027C8D2 /* JobPropertySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobPropertySpec.swift; sourceTree = "<group>"; };
+		F8AFBE501EEB365C0027C8D2 /* JavaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaClass.swift; sourceTree = "<group>"; };
 		F8AFBE531EEB3A150027C8D2 /* MatrixProjectSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixProjectSpec.swift; sourceTree = "<group>"; };
 		F8B7158A1EE39329006404A5 /* FreeStyleProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeStyleProject.swift; sourceTree = "<group>"; };
 		F8B7158C1EE4EE94006404A5 /* Folder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				F8A9FCDB1EEB29E0008EC173 /* FreeStyleBuild.swift */,
 				F8B7158A1EE39329006404A5 /* FreeStyleProject.swift */,
 				F8AFBE2E1EEB2CAC0027C8D2 /* HealthReport.swift */,
+				F8AFBE501EEB365C0027C8D2 /* JavaClass.swift */,
 				OBJ_9 /* Jenkins.swift */,
 				F8AFBE341EEB305C0027C8D2 /* JobConfiguration.swift */,
 				F8AFBE4B1EEB34860027C8D2 /* JobProperty.swift */,
@@ -458,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				F8AFBE521EEB376B0027C8D2 /* JavaClass.swift in Sources */,
 				F8568A561EE4C7B0005241ED /* JSONDictionary.swift in Sources */,
 				F8B049BB1EEB46A700D5DFEC /* MatrixProject.swift in Sources */,
 				OBJ_41 /* Butler.swift in Sources */,

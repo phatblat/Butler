@@ -17,7 +17,7 @@ import Foundation
  */
 struct Folder: Codable {
     /// Fuly qualified name of the correspinding Java class in Jenkins.
-    let _class: String
+    let _class: JavaClass
     let actions: [Dictionary<String, String>]
     let description: String?
     let displayName: String

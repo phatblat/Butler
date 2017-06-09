@@ -8,7 +8,7 @@
 import Foundation
 
 struct MatrixProject: Codable {
-    let _class: String
+    let _class: JavaClass
     let activeConfigurations: [JobConfiguration]
     let buildable: Bool
     let builds: [MatrixBuild]

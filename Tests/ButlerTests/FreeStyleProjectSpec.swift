@@ -27,7 +27,7 @@ class FreeStyleProjectSpec: QuickSpec {
             }
 
             it("has class") {
-                expect(project._class) == "hudson.model.FreeStyleProject"
+                expect(project._class) == JavaClass.freestyleProject
             }
             it("has a url") {
                 expect(project.url) == URL(string: "http://mini.log-g.co/jenkins/job/whoami/")

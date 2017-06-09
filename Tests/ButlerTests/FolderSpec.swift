@@ -27,7 +27,7 @@ class FolderSpec: QuickSpec {
             }
 
             it("has class") {
-                expect(project._class) == "com.cloudbees.hudson.plugins.folder.Folder"
+                expect(project._class) == JavaClass.folder
             }
             it("has a url") {
                 expect(project.url) == URL(string: "http://jenkins.log-g.co/job/Job%20Types/")
