@@ -82,7 +82,7 @@ task xcodeGenerate(type: Exec) {
     group taskGroup
     description 'Generates an Xcode project'
     // TODO: Add --xcconfig-overrides
-    String command = xcodePath + 'swift package generate-xcodeproj --enable-code-coverage'
+    String command = xcodePath + 'swift package -Xlinker -framework -Xlinker XCTest generate-xcodeproj'
     commandLine command.tokenize()
 }
 
