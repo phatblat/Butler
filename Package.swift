@@ -11,6 +11,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "git@github.com:Quick/Quick.git", from: "1.1.0"),
+        .package(url: "git@github.com:Quick/Nimble.git", from: "7.0.0"),
     ],
     targets: [
         .target(
@@ -23,6 +24,7 @@ let package = Package(
             dependencies: [
                 .target(name: "Butler"),
                 "Quick",
+                "Nimble",
             ],
             path: "Tests/ButlerTests"
         ),

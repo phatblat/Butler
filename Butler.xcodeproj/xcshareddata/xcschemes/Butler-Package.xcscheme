@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Nimble::Nimble"
+               BuildableName = "Nimble.framework"
+               BlueprintName = "Nimble"
+               ReferencedContainer = "container:Butler.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Quick::Quick"
                BuildableName = "Quick.framework"
                BlueprintName = "Quick"
@@ -83,9 +97,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "Quick::Quick"
-            BuildableName = "Quick.framework"
-            BlueprintName = "Quick"
+            BlueprintIdentifier = "Nimble::Nimble"
+            BuildableName = "Nimble.framework"
+            BlueprintName = "Nimble"
             ReferencedContainer = "container:Butler.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
