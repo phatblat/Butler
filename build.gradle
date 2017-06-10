@@ -81,32 +81,43 @@ task xcodeGenerate(type: Exec) {
     description '(Re)generates the Xcode project based on the Swift package definition.'
     group taskGroup
     description 'Generates an Xcode project'
-    commandLine 'swift package generate-xcodeproj'.tokenize()
+    // TODO: Add --xcconfig-overrides
+    String command = xcodePath + 'swift package generate-xcodeproj --enable-code-coverage'
+    commandLine command.tokenize()
+}
+
+task spmClean(type: Exec) {
+    description 'Cleans the Swift package .build directory.'
+    group taskGroup
+    String command = xcodePath + 'swift package reset'
+    commandLine command.tokenize()
 }
 
 task spmDescribe(type: Exec) {
     description 'Shows a summary of the Swift package.'
     group taskGroup
-    commandLine 'swift package describe'.tokenize()
+    String command = xcodePath + 'swift package describe'
+    commandLine command.tokenize()
 }
 
 task spmDependencies(type: Exec) {
     description 'Shows dependencies of the Swift package.'
     group taskGroup
-    commandLine 'swift package show-dependencies'.tokenize()
+    String command = xcodePath + 'swift package show-dependencies'
+    commandLine command.tokenize()
 }
 
-task swiftFetchDependencies(type: Exec) {
+task spmFetchDependencies(type: Exec) {
     description 'Downloads dependencies.'
     group taskGroup
-    String command = 'swift package resolve'
+    String command = xcodePath + 'swift package resolve'
     commandLine command.tokenize()
 }
 
 task swiftBuild(type: Exec) {
     description 'Builds the library using the swift compiler.'
     group taskGroup
-    String command = 'swift build'
+    String command = xcodePath + 'swift build'
     if (verbose) {
         command += ' --verbose'
     }
@@ -116,7 +127,7 @@ task swiftBuild(type: Exec) {
 task swiftTest(type: Exec) {
     description 'Runs the tests (broken).'
     group taskGroup
-    String command = 'swift test'
+    String command = xcodePath + 'swift test'
     if (verbose) {
         command += ' --verbose'
     }
@@ -129,7 +140,7 @@ task xcode {
     description 'Builds and runs tests using xcodebuild.'
     group taskGroup
     tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
-    tasks.getByName('xcodebuild').dependsOn swiftFetchDependencies
+    tasks.getByName('xcodebuild').dependsOn spmFetchDependencies
     dependsOn 'build'
     dependsOn 'test'
 }
@@ -145,9 +156,10 @@ task spm {
     group taskGroup
     dependsOn spmDescribe
     dependsOn spmDependencies
-    dependsOn swiftFetchDependencies
+    dependsOn spmFetchDependencies
     dependsOn swiftBuild
-    dependsOn swiftTest
+    // TEMP: SPM disabled due to issues with Quick tests
+    //dependsOn swiftTest
 }
 
 task buildAll {
@@ -155,6 +167,5 @@ task buildAll {
     group taskGroup
     dependsOn xcode
     dependsOn cocoapods
-    // TEMP: SPM disabled due to issues with Quick tests
-    //dependsOn spm
+    dependsOn spm
 }
