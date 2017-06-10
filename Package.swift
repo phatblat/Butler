@@ -9,7 +9,9 @@ let package = Package(
     products: [
         .library(name: "Butler", targets: ["Butler"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "git@github.com:Quick/Quick.git", from: "1.1.0"),
+    ],
     targets: [
         .target(
             name: "Butler",
@@ -19,7 +21,8 @@ let package = Package(
         .testTarget(
             name: "ButlerTests",
             dependencies: [
-                .target(name: "Butler")
+                .target(name: "Butler"),
+                "Quick",
             ],
             path: "Tests/ButlerTests"
         ),
