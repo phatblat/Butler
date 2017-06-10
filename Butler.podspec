@@ -17,6 +17,4 @@ Swift framework for accessing the Jenkins
   s.osx.deployment_target = '10.10'
 
   s.source_files = 'Sources/**/*'
-
-  s.dependency 'SwiftyJSON'
 end

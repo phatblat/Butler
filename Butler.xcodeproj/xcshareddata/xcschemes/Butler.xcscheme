@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "9999"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,21 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_29"
-               BuildableName = "SwiftyJSON.framework"
-               BlueprintName = "SwiftyJSON"
-               ReferencedContainer = "container:Butler.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_36"
+               BlueprintIdentifier = "OBJ_46"
                BuildableName = "Butler.framework"
                BlueprintName = "Butler"
                ReferencedContainer = "container:Butler.xcodeproj">
@@ -47,7 +33,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_47"
+               BlueprintIdentifier = "OBJ_66"
                BuildableName = "ButlerTests.xctest"
                BlueprintName = "ButlerTests"
                ReferencedContainer = "container:Butler.xcodeproj">
@@ -70,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_29"
-            BuildableName = "SwiftyJSON.framework"
-            BlueprintName = "SwiftyJSON"
+            BlueprintIdentifier = "OBJ_46"
+            BuildableName = "Butler.framework"
+            BlueprintName = "Butler"
             ReferencedContainer = "container:Butler.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
