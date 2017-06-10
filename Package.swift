@@ -1,19 +1,26 @@
 // swift-tools-version:4.0
 // https://github.com/apple/swift-package-manager/blob/master/Documentation/PackageDescriptionV4.md
-// swift-tools-version:4.0
+// https://github.com/apple/swift-package-manager/blob/master/Sources/PackageDescription4/Target.swift#L83
 
 import PackageDescription
 
 let package = Package(
     name: "Butler",
-//    products: [
-//        .library(name: "Butler", targets: ["Butler"]),
-//    ],
-    // dependencies: [],
+    products: [
+        // .library(name: "ButlerFramework", type: .dynamic, targets: []),
+    ],
+    dependencies: [],
     targets: [
-        // https://github.com/apple/swift-package-manager/blob/master/Sources/PackageDescription4/Target.swift#L83
-        .target(name: "Butler", dependencies: []),
-        // .testTarget(name: "ButlerTests", dependencies: []),
+        .target(
+            name: "Butler",
+            dependencies: [],
+            path: "Sources"
+        ),
+        .testTarget(
+            name: "ButlerTests",
+            dependencies: [],
+            path: "Tests/ButlerTests"
+        ),
     ],
     swiftLanguageVersions: [4]
 )
