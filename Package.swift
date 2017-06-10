@@ -7,7 +7,7 @@ import PackageDescription
 let package = Package(
     name: "Butler",
     products: [
-        // .library(name: "ButlerFramework", type: .dynamic, targets: []),
+        .library(name: "Butler", type: .dynamic, targets: ["Butler"]),
     ],
     dependencies: [],
     targets: [
@@ -18,7 +18,9 @@ let package = Package(
         ),
         .testTarget(
             name: "ButlerTests",
-            dependencies: [],
+            dependencies: [
+                .target(name: "Butler")
+            ],
             path: "Tests/ButlerTests"
         ),
     ],
