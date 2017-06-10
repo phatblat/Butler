@@ -7,10 +7,12 @@ target 'Butler' do
   target 'ButlerTests' do
     inherit! :search_paths
 
-    pod 'Quick', git: 'git@github.com:phatblat/Quick.git', branch: 'swift4'
-    # path: '../../ios/pods/Quick'
+    pod 'Quick',
+        git: 'git@github.com:phatblat/Quick.git', branch: 'swift4'
+        # path: '../../ios/pods/Quick'
 
-    pod 'Nimble', git: 'git@github.com:phatblat/Nimble.git', branch: 'swift4'
-    # , path: '../../ios/pods/Nimble'
+    pod 'Nimble',
+        git: 'git@github.com:phatblat/Nimble.git', branch: 'swift4'
+        # path: '../../ios/pods/Nimble'
   end
 end

@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Nimble:
-    :commit: 1f690d47aa9db899ba8e7e5280f1fa756fcdd27e
+    :commit: f519d075ca17d1715cf85136ec3557496f05cb76
     :git: git@github.com:phatblat/Nimble.git
   Quick:
     :commit: 717bae6d6cb1267c5cc366dc8cb6cf80691081e2
@@ -26,6 +26,6 @@ SPEC CHECKSUMS:
   Nimble: f8cda7a16ec2180b57905dd50b28127220f66a17
   Quick: 4700beb8056662b579facd79eaca7f04fb3d48e6
 
-PODFILE CHECKSUM: e729666bb6c25a27ea3cbd639e8321753dbda5b1
+PODFILE CHECKSUM: 6255ec69993f73092b1858e5a6aed15f2381dec0
 
 COCOAPODS: 1.2.1
