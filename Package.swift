@@ -14,9 +14,9 @@ let package = Package(
     ],
     dependencies: [
         // .package(url: "git@github.com:Quick/Quick.git", from: "1.1.0"),
-        .package(url: "\(containingFolder)/Quick", from: "1.1.0"),
+        .package(url: "\(containingFolder)/Quick", branch: "swift4"),
         //.package(url: "git@github.com:Quick/Nimble.git", from: "7.0.1"),
-        .package(url: "\(containingFolder)/Nimble", from: "7.0.1"),
+        .package(url: "\(containingFolder)/Nimble", branch: "swift4"),
     ],
     targets: [
         .target(
