@@ -137,7 +137,7 @@
       "OBJ_104" = {
          isa = "PBXFileReference";
          name = "module.modulemap";
-         path = "/Users/phatblat/dev/jenkins/Butler/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
+         path = "/Volumes/Macintosh HD/Users/phatblat/dev/jenkins/Butler/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
          sourceTree = "<group>";
       };
       "OBJ_105" = {
@@ -1469,12 +1469,12 @@
       };
       "OBJ_37" = {
          isa = "PBXFileReference";
-         path = "Example";
+         path = "Docs";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_38" = {
          isa = "PBXFileReference";
-         path = "Docs";
+         path = "Example";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_39" = {
@@ -1560,7 +1560,7 @@
             "OBJ_93",
          );
          name = "Nimble";
-         path = ".build/checkouts/Nimble.git--6907129570294764061/Sources/Nimble";
+         path = ".build/checkouts/Nimble--2550069192175157305/Sources/Nimble";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_45" = {

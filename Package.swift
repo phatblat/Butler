@@ -4,14 +4,19 @@
 
 import PackageDescription
 
+/// Local relative path to folder containing Quick and Nimble repos.
+let containingFolder = "../../ios/pods"
+
 let package = Package(
     name: "Butler",
     products: [
         .library(name: "Butler", targets: ["Butler"]),
     ],
     dependencies: [
-        .package(url: "git@github.com:Quick/Quick.git", from: "1.1.0"),
-        .package(url: "git@github.com:Quick/Nimble.git", from: "7.0.0"),
+        // .package(url: "git@github.com:Quick/Quick.git", from: "1.1.0"),
+        .package(url: "\(containingFolder)/Quick", from: "1.1.0"),
+        //.package(url: "git@github.com:Quick/Nimble.git", from: "7.0.1"),
+        .package(url: "\(containingFolder)/Nimble", from: "7.0.1"),
     ],
     targets: [
         .target(
