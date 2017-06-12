@@ -81,7 +81,7 @@ task xcodeGenerate(type: Exec) {
     description '(Re)generates the Xcode project based on the Swift package definition.'
     group taskGroup
     description 'Generates an Xcode project'
-    // TODO: Add --xcconfig-overrides
+    // TODO: Add --xcconfig-overrides Config/Universal.xcconfig
     String command = xcodePath + 'swift package -Xlinker -framework -Xlinker XCTest generate-xcodeproj'
     commandLine command.tokenize()
 }
@@ -90,6 +90,13 @@ task spmClean(type: Exec) {
     description 'Cleans the Swift package .build directory.'
     group taskGroup
     String command = xcodePath + 'swift package reset'
+    commandLine command.tokenize()
+}
+
+task spmUpdate(type: Exec) {
+    description 'Updates dependencies of the swift package.'
+    group taskGroup
+    String command = xcodePath + 'swift package update'
     commandLine command.tokenize()
 }
 
