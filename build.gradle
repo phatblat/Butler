@@ -121,6 +121,20 @@ task spmFetchDependencies(type: Exec) {
     commandLine command.tokenize()
 }
 
+task spmVersion(type: Exec) {
+    description 'Prints the version of SwiftPM being used.'
+    group taskGroup
+    String command = xcodePath + 'swift package --version'
+    commandLine command.tokenize()
+}
+
+task swiftVersion(type: Exec) {
+    description 'Prints the version of swift compiler being used.'
+    group taskGroup
+    String command = xcodePath + 'swift  --version'
+    commandLine command.tokenize()
+}
+
 task swiftBuild(type: Exec) {
     description 'Builds the library using the swift compiler.'
     group taskGroup
@@ -148,6 +162,7 @@ task xcode {
     group taskGroup
     tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
     tasks.getByName('xcodebuild').dependsOn spmFetchDependencies
+    dependsOn xcodeVersion
     dependsOn 'build'
     dependsOn 'test'
 }
@@ -161,10 +176,15 @@ task cocoapods {
 task spm {
     description 'Builds and runs tests using the Swift Package Manager.'
     group taskGroup
+    dependsOn xcodeVersion
+    dependsOn swiftVersion
+    dependsOn spmVersion
     dependsOn spmDescribe
     dependsOn spmDependencies
     dependsOn spmFetchDependencies
+    dependsOn xcodeGenerate
     dependsOn swiftBuild
+    swiftBuild.mustRunAfter xcodeGenerate
     // TEMP: SPM disabled due to issues with Quick tests
     //dependsOn swiftTest
 }
