@@ -131,7 +131,7 @@ task spmVersion(type: Exec) {
 task swiftVersion(type: Exec) {
     description 'Prints the version of swift compiler being used.'
     group taskGroup
-    String command = xcodePath + 'swift  --version'
+    String command = xcodePath + 'swift --version'
     commandLine command.tokenize()
 }
 
