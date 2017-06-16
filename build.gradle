@@ -82,7 +82,10 @@ task xcodeGenerate(type: Exec) {
     group taskGroup
     description 'Generates an Xcode project'
     // TODO: Add --xcconfig-overrides Config/Universal.xcconfig
-    String command = xcodePath + 'swift package -Xlinker -framework -Xlinker XCTest generate-xcodeproj'
+    String command = xcodePath +
+                'swift package' +
+                ' -Xlinker -framework -Xlinker XCTest' +
+                ' generate-xcodeproj'
     commandLine command.tokenize()
 }
 
