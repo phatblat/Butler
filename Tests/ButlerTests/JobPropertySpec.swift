@@ -8,6 +8,7 @@
 @testable import Butler
 import Quick
 import Nimble
+import Foundation
 
 class JobPropertySpec: QuickSpec {
     override func spec() {

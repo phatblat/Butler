@@ -9,6 +9,7 @@
 @testable import Butler
 import Quick
 import Nimble
+import Foundation
 
 class ExternalJobSpec: QuickSpec {
     override func spec() {
