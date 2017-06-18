@@ -36,7 +36,7 @@ struct MavenModuleSet: Codable {
     let nextBuildNumber: Int
     let property: [String]
     let queueItem: String?
-    let scm: [String: String]
+    let scm: [String: JavaClass]
     let upstreamProjects: [String]
     let url: URL
 }

@@ -17,4 +17,5 @@ enum JavaClass: String, Codable {
     case matrixBuild = "hudson.matrix.MatrixBuild"
     case matrixProject = "hudson.matrix.MatrixProject"
     case mavenModuleSet = "hudson.maven.MavenModuleSet"
+    case nullScm = "hudson.scm.NullSCM"
 }
