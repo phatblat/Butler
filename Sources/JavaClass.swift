@@ -14,6 +14,7 @@ enum JavaClass: String, Codable {
     case freestyleBuild = "hudson.model.FreeStyleBuild"
     case freestyleProject = "hudson.model.FreeStyleProject"
     case githubProject = "com.coravy.hudson.plugins.github.GithubProjectProperty"
-    case matrixBuild =  "hudson.matrix.MatrixBuild"
-    case matrixProject =  "hudson.matrix.MatrixProject"
+    case matrixBuild = "hudson.matrix.MatrixBuild"
+    case matrixProject = "hudson.matrix.MatrixProject"
+    case mavenModuleSet = "hudson.maven.MavenModuleSet"
 }
