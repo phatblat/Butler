@@ -9,7 +9,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: 'org.openbakery', name: 'xcode-plugin', version: '+'
+        classpath 'org.openbakery:xcode-plugin:+'
     }
 }
 
