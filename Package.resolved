@@ -3,20 +3,20 @@
     "pins": [
       {
         "package": "Nimble",
-        "repositoryURL": "/Volumes/Macintosh HD/Users/phatblat/dev/ios/pods/Nimble",
+        "repositoryURL": "git@github.com:Quick/Nimble.git",
         "state": {
-          "branch": null,
-          "revision": "39b67002306fda9de4c9fd1290a6295f97edd09e",
-          "version": "7.0.1"
+          "branch": "master",
+          "revision": "70279be142a0b4bbdcb2277d38d4c83eda47622b",
+          "version": null
         }
       },
       {
         "package": "Quick",
         "repositoryURL": "git@github.com:Quick/Quick.git",
         "state": {
-          "branch": null,
-          "revision": "e4fa1e85c0305ba4e0866f25812d3fa398f3a048",
-          "version": "1.1.0"
+          "branch": "xcode-9-fix",
+          "revision": "a3850d0ddc18cf1e6ef17b3078c660f46888deca",
+          "version": null
         }
       }
     ]

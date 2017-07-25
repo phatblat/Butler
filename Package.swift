@@ -13,10 +13,14 @@ let package = Package(
         .library(name: "Butler", targets: ["Butler"]),
     ],
     dependencies: [
-        // .package(url: "git@github.com:Quick/Quick.git", from: "1.1.0"),
-        .package(url: "\(containingFolder)/Quick", .branch("swift4")),
-        //.package(url: "git@github.com:Quick/Nimble.git", from: "7.0.1"),
-        .package(url: "\(containingFolder)/Nimble", .branch("swift4")),
+        .package(url: "git@github.com:Quick/Quick.git",
+            .branch("xcode-9-fix")),
+            //from: "1.1.0"),
+        // .package(url: "\(containingFolder)/Quick", .branch("master")),
+        .package(url: "git@github.com:Quick/Nimble.git",
+            .branch("master")),
+            // from: "7.0.1"),
+        // .package(url: "\(containingFolder)/Nimble", .branch("xcode9-beta")),
     ],
     targets: [
         .target(
