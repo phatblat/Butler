@@ -185,6 +185,7 @@ task spm {
     dependsOn spmDescribe
     dependsOn spmDependencies
     dependsOn spmFetchDependencies
+    dependsOn spmUpdate
     dependsOn xcodeGenerate
     dependsOn swiftBuild
     swiftBuild.mustRunAfter xcodeGenerate
