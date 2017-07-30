@@ -73,6 +73,15 @@ task xcodeVersion(type: Exec) {
     commandLine command.tokenize()
 }
 
+task archiveFramework(type: Zip) {
+    description 'Zips a copy of the built framework.'
+    group taskGroup
+
+    from 'build/sym/Debug/Butler.framework/'
+    archiveName 'Butler.framework.zip'
+    destinationDir(project.buildDir)
+}
+
 /* -------------------------------------------------------------------------- */
 // Bundler
 /* -------------------------------------------------------------------------- */
@@ -248,8 +257,10 @@ task xcode {
     dependsOn xcodeVersion
     dependsOn xcodeGenerate
     dependsOn formatPlistFiles
+    dependsOn archiveFramework
 
-    xcodebuild.mustRunAfter xcodeGenerate
+    xcodebuild.dependsOn xcodeGenerate
+    archiveFramework.dependsOn xcodebuild
 }
 
 task buildAll {
