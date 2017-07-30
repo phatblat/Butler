@@ -3,12 +3,26 @@
  * Butler
  */
 
+buildscript {
+    repositories {
+        maven { url 'http://repository.openbakery.org/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.openbakery:xcode-plugin:+'
+    }
+}
+
+String taskGroup = 'zzz Butler'
+
 ext {
     if (project.hasProperty('verbose')) {
         verbose = project.verbose.toBoolean()
     } else {
         verbose = false
     }
+
+    xcodePath = 'env DEVELOPER_DIR=/Applications/Xcode-9beta4.app '
 }
 
 if (System.env.JENKINS_URL) {
@@ -16,9 +30,31 @@ if (System.env.JENKINS_URL) {
     ext.verbose = true
 }
 
+/* xcodePlugin */
+
+apply plugin: 'org.openbakery.xcode-plugin'
+
+xcodebuild {
+    version = '9'
+    type = 'macOS'
+    scheme = 'Butler'
+    target = 'Butler'
+    // https://github.com/openbakery/gradle-xcodePlugin/issues/361
+    bundleName = 'Butler'
+}
+
+task xcodeVersion(type: Exec) {
+    description 'Prints the version of Xcode used by the build.'
+    group taskGroup
+    String command =  xcodePath + 'xcodebuild -version'
+    commandLine command.tokenize()
+}
+
 /* Bundler */
 
 task bundleInstall(type: Exec) {
+    description 'Installs ruby gems using Bundler.'
+    group taskGroup
     String command = 'bundle install'
     if (!verbose) {
         command += ' --quiet'
@@ -29,9 +65,10 @@ task bundleInstall(type: Exec) {
 /* CocoaPods */
 
 task podLibLint(type: Exec) {
+    description 'Builds and lints the library as a CocoaPods.'
+    group taskGroup
     dependsOn bundleInstall
-
-    String command = 'bundle exec pod lib lint'
+    String command = xcodePath + 'bundle exec pod lib lint'
     if (verbose) {
         command += ' --verbose'
     }
@@ -41,20 +78,78 @@ task podLibLint(type: Exec) {
 /* Swift Package Manager */
 
 task xcodeGenerate(type: Exec) {
-    description 'Generates an Xcode project'
-    commandLine 'swift package generate-xcodeproj'.tokenize()
+    description '(Re)generates the Xcode project based on the Swift package definition.'
+    group taskGroup
+
+    String command = xcodePath +
+                'swift package' +
+                ' -Xlinker -framework -Xlinker XCTest' +
+                ' generate-xcodeproj' +
+                ' --xcconfig-overrides Config/Universal.xcconfig'
+    commandLine command.tokenize()
+}
+
+task formatPlistFiles(type: Exec) {
+    description 'Formats plist files.'
+    group taskGroup
+    mustRunAfter xcodeGenerate
+
+    commandLine 'bash', '-c', 'plutil -convert xml1 *.xcodeproj/*.plist'
+}
+
+task spmClean(type: Exec) {
+    description 'Cleans the Swift package .build directory.'
+    group taskGroup
+    String command = xcodePath + 'swift package reset'
+    commandLine command.tokenize()
+}
+
+task spmUpdate(type: Exec) {
+    description 'Updates dependencies of the swift package.'
+    group taskGroup
+    String command = xcodePath + 'swift package update'
+    commandLine command.tokenize()
 }
 
 task spmDescribe(type: Exec) {
-    commandLine 'swift package describe'.tokenize()
+    description 'Shows a summary of the Swift package.'
+    group taskGroup
+    String command = xcodePath + 'swift package describe'
+    commandLine command.tokenize()
 }
 
 task spmDependencies(type: Exec) {
-    commandLine 'swift package show-dependencies'.tokenize()
+    description 'Shows dependencies of the Swift package.'
+    group taskGroup
+    String command = xcodePath + 'swift package show-dependencies'
+    commandLine command.tokenize()
+}
+
+task spmFetchDependencies(type: Exec) {
+    description 'Downloads dependencies.'
+    group taskGroup
+    String command = xcodePath + 'swift package resolve'
+    commandLine command.tokenize()
+}
+
+task spmVersion(type: Exec) {
+    description 'Prints the version of SwiftPM being used.'
+    group taskGroup
+    String command = xcodePath + 'swift package --version'
+    commandLine command.tokenize()
+}
+
+task swiftVersion(type: Exec) {
+    description 'Prints the version of swift compiler being used.'
+    group taskGroup
+    String command = xcodePath + 'swift --version'
+    commandLine command.tokenize()
 }
 
 task swiftBuild(type: Exec) {
-    String command = 'swift build'
+    description 'Builds the library using the swift compiler.'
+    group taskGroup
+    String command = xcodePath + 'swift build'
     if (verbose) {
         command += ' --verbose'
     }
@@ -62,7 +157,9 @@ task swiftBuild(type: Exec) {
 }
 
 task swiftTest(type: Exec) {
-    String command = 'swift test'
+    description 'Runs the tests (broken).'
+    group taskGroup
+    String command = xcodePath + 'swift test'
     if (verbose) {
         command += ' --verbose'
     }
@@ -71,18 +168,48 @@ task swiftTest(type: Exec) {
 
 /* Top-Level Tasks for CI */
 
+task xcode {
+    description 'Builds and runs tests using xcodebuild.'
+    group taskGroup
+
+    Task xcodebuild = tasks.getByName('xcodebuild')
+    tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
+    xcodebuild.dependsOn spmFetchDependencies
+    dependsOn xcodeVersion
+    dependsOn xcodeGenerate
+    dependsOn formatPlistFiles
+
+    xcodebuild.mustRunAfter xcodeGenerate
+}
+
 task cocoapods {
+    description 'Builds and lints the library as a CocoaPod.'
+    group taskGroup
     dependsOn podLibLint
 }
 
 task spm {
+    description 'Builds and runs tests using the Swift Package Manager.'
+    group taskGroup
+    dependsOn xcodeVersion
+    dependsOn swiftVersion
+    dependsOn spmVersion
     dependsOn spmDescribe
     dependsOn spmDependencies
+    dependsOn spmFetchDependencies
+    dependsOn spmUpdate
+    dependsOn xcodeGenerate
+    dependsOn formatPlistFiles
     dependsOn swiftBuild
-    dependsOn swiftTest
+    swiftBuild.mustRunAfter xcodeGenerate
+    // TEMP: SPM disabled due to issues with Quick tests
+    //dependsOn swiftTest
 }
 
 task buildAll {
+    description 'Runs all types of builds.'
+    group taskGroup
+    dependsOn xcode
     dependsOn cocoapods
     dependsOn spm
 }

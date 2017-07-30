@@ -69,6 +69,12 @@ target for iOS & macOS
   [not currently supported](https://stackoverflow.com/questions/41401753/test-only-dependencies-when-using-the-swift-package-manager#answer-41407032)
   by SPM
 
+In order to (re)generate the Xcode project, follow these steps:
+
+1. Run `env DEVELOPER_DIR=/Applications/Xcode-9.app swift package generate-xcodeproj --xcconfig-overrides Config/Universal.xcconfig`.
+1. Add a "Copy Files Phase" to the ButlerTests target
+  - Add the `JSON` folder to the list of files to copy.
+
 ------
 
 ## Author

@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Nimble",
+        "repositoryURL": "git@github.com:Quick/Nimble.git",
+        "state": {
+          "branch": "master",
+          "revision": "70279be142a0b4bbdcb2277d38d4c83eda47622b",
+          "version": null
+        }
+      },
+      {
+        "package": "Quick",
+        "repositoryURL": "git@github.com:Quick/Quick.git",
+        "state": {
+          "branch": "xcode-9-fix",
+          "revision": "a3850d0ddc18cf1e6ef17b3078c660f46888deca",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

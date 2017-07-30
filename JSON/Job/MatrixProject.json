@@ -1,0 +1,163 @@
+{
+  "_class": "hudson.matrix.MatrixProject",
+  "actions": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    }
+  ],
+  "activeConfigurations": [
+    {
+      "color": "blue",
+      "name": "GRADLE_TASK=cocoapods,label=node1",
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/GRADLE_TASK=cocoapods,label=node1/"
+    },
+    {
+      "color": "blue",
+      "name": "GRADLE_TASK=spm,label=node1",
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/GRADLE_TASK=spm,label=node1/"
+    }
+  ],
+  "buildable": true,
+  "builds": [
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 13,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/13/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 12,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/12/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 11,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/11/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 10,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/10/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 9,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/9/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 8,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/8/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 7,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/7/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 6,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/6/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 5,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/5/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 4,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/4/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 3,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/3/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 2,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/2/"
+    },
+    {
+      "_class": "hudson.matrix.MatrixBuild",
+      "number": 1,
+      "url": "http://jenkins.log-g.co/job/ButlerMatrix/1/"
+    }
+  ],
+  "color": "blue",
+  "concurrentBuild": false,
+  "description": "Swift bindings for the Jenkins API. Multi-configuration build testing all distribution methods.",
+  "displayName": "ButlerMatrix",
+  "displayNameOrNull": null,
+  "downstreamProjects": [],
+  "firstBuild": {
+    "_class": "hudson.matrix.MatrixBuild",
+    "number": 1,
+    "url": "http://jenkins.log-g.co/job/ButlerMatrix/1/"
+  },
+  "fullDisplayName": "ButlerMatrix",
+  "fullName": "ButlerMatrix",
+  "healthReport": [
+    {
+      "description": "Build stability: 3 out of the last 5 builds failed.",
+      "iconClassName": "icon-health-20to39",
+      "iconUrl": "health-20to39.png",
+      "score": 40
+    }
+  ],
+  "inQueue": false,
+  "keepDependencies": false,
+  "lastBuild": {
+    "_class": "hudson.matrix.MatrixBuild",
+    "number": 13,
+    "url": "http://jenkins.log-g.co/job/ButlerMatrix/13/"
+  },
+  "lastCompletedBuild": {
+    "_class": "hudson.matrix.MatrixBuild",
+    "number": 13,
+    "url": "http://jenkins.log-g.co/job/ButlerMatrix/13/"
+  },
+  "lastFailedBuild": {
+    "_class": "hudson.matrix.MatrixBuild",
+    "number": 12,
+    "url": "http://jenkins.log-g.co/job/ButlerMatrix/12/"
+  },
+  "lastStableBuild": {
+    "_class": "hudson.matrix.MatrixBuild",
+    "number": 13,
+    "url": "http://jenkins.log-g.co/job/ButlerMatrix/13/"
+  },
+  "lastSuccessfulBuild": {
+    "_class": "hudson.matrix.MatrixBuild",
+    "number": 13,
+    "url": "http://jenkins.log-g.co/job/ButlerMatrix/13/"
+  },
+  "lastUnstableBuild": null,
+  "lastUnsuccessfulBuild": {
+    "_class": "hudson.matrix.MatrixBuild",
+    "number": 12,
+    "url": "http://jenkins.log-g.co/job/ButlerMatrix/12/"
+  },
+  "name": "ButlerMatrix",
+  "nextBuildNumber": 14,
+  "property": [
+    {
+      "_class": "jenkins.model.BuildDiscarderProperty"
+    },
+    {
+      "_class": "com.coravy.hudson.plugins.github.GithubProjectProperty"
+    }
+  ],
+  "queueItem": null,
+  "scm": {
+    "_class": "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects": [],
+  "url": "http://jenkins.log-g.co/job/ButlerMatrix/"
+}

@@ -1,0 +1,161 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowJob",
+  "actions": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    }
+  ],
+  "buildable": true,
+  "builds": [
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 15,
+      "url": "http://jenkins.log-g.co/job/mas/15/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 14,
+      "url": "http://jenkins.log-g.co/job/mas/14/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 13,
+      "url": "http://jenkins.log-g.co/job/mas/13/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 12,
+      "url": "http://jenkins.log-g.co/job/mas/12/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 11,
+      "url": "http://jenkins.log-g.co/job/mas/11/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 10,
+      "url": "http://jenkins.log-g.co/job/mas/10/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 9,
+      "url": "http://jenkins.log-g.co/job/mas/9/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 8,
+      "url": "http://jenkins.log-g.co/job/mas/8/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 7,
+      "url": "http://jenkins.log-g.co/job/mas/7/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 6,
+      "url": "http://jenkins.log-g.co/job/mas/6/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 5,
+      "url": "http://jenkins.log-g.co/job/mas/5/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 4,
+      "url": "http://jenkins.log-g.co/job/mas/4/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 3,
+      "url": "http://jenkins.log-g.co/job/mas/3/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 2,
+      "url": "http://jenkins.log-g.co/job/mas/2/"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number": 1,
+      "url": "http://jenkins.log-g.co/job/mas/1/"
+    }
+  ],
+  "color": "blue",
+  "concurrentBuild": true,
+  "description": "",
+  "displayName": "mas",
+  "displayNameOrNull": null,
+  "firstBuild": {
+    "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number": 1,
+    "url": "http://jenkins.log-g.co/job/mas/1/"
+  },
+  "fullDisplayName": "mas",
+  "fullName": "mas",
+  "healthReport": [
+    {
+      "description": "Build stability: 3 out of the last 5 builds failed.",
+      "iconClassName": "icon-health-20to39",
+      "iconUrl": "health-20to39.png",
+      "score": 40
+    }
+  ],
+  "inQueue": false,
+  "keepDependencies": false,
+  "lastBuild": {
+    "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number": 15,
+    "url": "http://jenkins.log-g.co/job/mas/15/"
+  },
+  "lastCompletedBuild": {
+    "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number": 15,
+    "url": "http://jenkins.log-g.co/job/mas/15/"
+  },
+  "lastFailedBuild": {
+    "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number": 14,
+    "url": "http://jenkins.log-g.co/job/mas/14/"
+  },
+  "lastStableBuild": {
+    "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number": 15,
+    "url": "http://jenkins.log-g.co/job/mas/15/"
+  },
+  "lastSuccessfulBuild": {
+    "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number": 15,
+    "url": "http://jenkins.log-g.co/job/mas/15/"
+  },
+  "lastUnstableBuild": null,
+  "lastUnsuccessfulBuild": {
+    "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number": 14,
+    "url": "http://jenkins.log-g.co/job/mas/14/"
+  },
+  "name": "mas",
+  "nextBuildNumber": 16,
+  "property": [
+    {
+      "_class": "jenkins.model.BuildDiscarderProperty"
+    },
+    {
+      "_class": "com.coravy.hudson.plugins.github.GithubProjectProperty"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty"
+    }
+  ],
+  "queueItem": null,
+  "url": "http://jenkins.log-g.co/job/mas/"
+}

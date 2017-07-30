@@ -6,150 +6,643 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		"Butler::ButlerPackageTests::ProductTarget" /* ButlerPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_284 /* Build configuration list for PBXAggregateTarget "ButlerPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_287 /* PBXTargetDependency */,
+			);
+			name = ButlerPackageTests;
+			productName = ButlerPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		292992CDB051C1776117A9E5 /* Pods_ButlerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6A9B7346F066BE15B21428 /* Pods_ButlerTests.framework */; };
-		667E75F408208DC98C3C2697 /* Pods_Butler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03611EB069CAD1C141A91C1D /* Pods_Butler.framework */; };
-		OBJ_26 /* Butler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Butler.swift */; };
-		OBJ_27 /* Jenkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Jenkins.swift */; };
-		OBJ_28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* User.swift */; };
-		OBJ_35 /* ButlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* ButlerTests.swift */; };
-		OBJ_37 /* Butler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Butler.framework */; };
+		F8F3EF191F27D666004429CF /* JSON in Copy JSON */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* JSON */; };
+		OBJ_148 /* ButlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* ButlerTests.swift */; };
+		OBJ_149 /* ExternalJobSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ExternalJobSpec.swift */; };
+		OBJ_150 /* FolderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* FolderSpec.swift */; };
+		OBJ_151 /* FreeStyleBuildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* FreeStyleBuildSpec.swift */; };
+		OBJ_152 /* FreeStyleProjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* FreeStyleProjectSpec.swift */; };
+		OBJ_153 /* HealthReportSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* HealthReportSpec.swift */; };
+		OBJ_154 /* JobConfigurationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* JobConfigurationSpec.swift */; };
+		OBJ_155 /* JobPropertySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* JobPropertySpec.swift */; };
+		OBJ_156 /* MatrixBuildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* MatrixBuildSpec.swift */; };
+		OBJ_157 /* MatrixProjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* MatrixProjectSpec.swift */; };
+		OBJ_158 /* MavenModuleSetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* MavenModuleSetSpec.swift */; };
+		OBJ_160 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Nimble::Nimble::Product" /* Nimble.framework */; };
+		OBJ_161 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Quick::Quick::Product" /* Quick.framework */; };
+		OBJ_162 /* QuickSpecBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Quick::QuickSpecBase::Product" /* QuickSpecBase.framework */; };
+		OBJ_163 /* Butler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Butler::Butler::Product" /* Butler.framework */; };
+		OBJ_176 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* AdapterProtocols.swift */; };
+		OBJ_177 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* AssertionDispatcher.swift */; };
+		OBJ_178 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* AssertionRecorder.swift */; };
+		OBJ_179 /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* NMBExpectation.swift */; };
+		OBJ_180 /* NMBObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* NMBObjCMatcher.swift */; };
+		OBJ_181 /* NimbleEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* NimbleEnvironment.swift */; };
+		OBJ_182 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* NimbleXCTestHandler.swift */; };
+		OBJ_183 /* ExceptionCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* ExceptionCapture.swift */; };
+		OBJ_184 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* DSL+Wait.swift */; };
+		OBJ_185 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* DSL.swift */; };
+		OBJ_186 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Expectation.swift */; };
+		OBJ_187 /* ExpectationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* ExpectationMessage.swift */; };
+		OBJ_188 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Expression.swift */; };
+		OBJ_189 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* FailureMessage.swift */; };
+		OBJ_190 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* AllPass.swift */; };
+		OBJ_191 /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* AsyncMatcherWrapper.swift */; };
+		OBJ_192 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* BeAKindOf.swift */; };
+		OBJ_193 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* BeAnInstanceOf.swift */; };
+		OBJ_194 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* BeCloseTo.swift */; };
+		OBJ_195 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* BeEmpty.swift */; };
+		OBJ_196 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* BeGreaterThan.swift */; };
+		OBJ_197 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* BeGreaterThanOrEqualTo.swift */; };
+		OBJ_198 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* BeIdenticalTo.swift */; };
+		OBJ_199 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* BeLessThan.swift */; };
+		OBJ_200 /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* BeLessThanOrEqual.swift */; };
+		OBJ_201 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* BeLogical.swift */; };
+		OBJ_202 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* BeNil.swift */; };
+		OBJ_203 /* BeVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* BeVoid.swift */; };
+		OBJ_204 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* BeginWith.swift */; };
+		OBJ_205 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* Contain.swift */; };
+		OBJ_206 /* ContainElementSatisfying.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* ContainElementSatisfying.swift */; };
+		OBJ_207 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* EndWith.swift */; };
+		OBJ_208 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* Equal.swift */; };
+		OBJ_209 /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* HaveCount.swift */; };
+		OBJ_210 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* Match.swift */; };
+		OBJ_211 /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* MatchError.swift */; };
+		OBJ_212 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* MatcherFunc.swift */; };
+		OBJ_213 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* MatcherProtocols.swift */; };
+		OBJ_214 /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* PostNotification.swift */; };
+		OBJ_215 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* Predicate.swift */; };
+		OBJ_216 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* RaisesException.swift */; };
+		OBJ_217 /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* SatisfyAnyOf.swift */; };
+		OBJ_218 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* ThrowAssertion.swift */; };
+		OBJ_219 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* ThrowError.swift */; };
+		OBJ_220 /* ToSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* ToSucceed.swift */; };
+		OBJ_221 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* Async.swift */; };
+		OBJ_222 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* Errors.swift */; };
+		OBJ_223 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* Functional.swift */; };
+		OBJ_224 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* SourceLocation.swift */; };
+		OBJ_225 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* Stringers.swift */; };
+		OBJ_231 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* Behavior.swift */; };
+		OBJ_232 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* Callsite.swift */; };
+		OBJ_233 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* Configuration.swift */; };
+		OBJ_234 /* QuickConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* QuickConfiguration.swift */; };
+		OBJ_235 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* DSL.swift */; };
+		OBJ_236 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* World+DSL.swift */; };
+		OBJ_237 /* ErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* ErrorUtility.swift */; };
+		OBJ_238 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* Example.swift */; };
+		OBJ_239 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* ExampleGroup.swift */; };
+		OBJ_240 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* ExampleMetadata.swift */; };
+		OBJ_241 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* Filter.swift */; };
+		OBJ_242 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* Closures.swift */; };
+		OBJ_243 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* ExampleHooks.swift */; };
+		OBJ_244 /* HooksPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* HooksPhase.swift */; };
+		OBJ_245 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* SuiteHooks.swift */; };
+		OBJ_246 /* NSBundle+CurrentTestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* NSBundle+CurrentTestBundle.swift */; };
+		OBJ_247 /* NSString+C99ExtendedIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* NSString+C99ExtendedIdentifier.swift */; };
+		OBJ_248 /* QuickMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* QuickMain.swift */; };
+		OBJ_249 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_132 /* QuickSelectedTestSuiteBuilder.swift */; };
+		OBJ_250 /* QuickSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* QuickSpec.swift */; };
+		OBJ_251 /* QuickTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* QuickTestSuite.swift */; };
+		OBJ_252 /* URL+FileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* URL+FileName.swift */; };
+		OBJ_253 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* World.swift */; };
+		OBJ_255 /* QuickSpecBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Quick::QuickSpecBase::Product" /* QuickSpecBase.framework */; };
+		OBJ_261 /* QuickSpecBase.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* QuickSpecBase.m */; };
+		OBJ_267 /* Butler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Butler.swift */; };
+		OBJ_268 /* ExternalJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ExternalJob.swift */; };
+		OBJ_269 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Folder.swift */; };
+		OBJ_270 /* FreeStyleBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* FreeStyleBuild.swift */; };
+		OBJ_271 /* FreeStyleProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* FreeStyleProject.swift */; };
+		OBJ_272 /* HealthReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* HealthReport.swift */; };
+		OBJ_273 /* JSONDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* JSONDictionary.swift */; };
+		OBJ_274 /* JavaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* JavaClass.swift */; };
+		OBJ_275 /* Jenkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Jenkins.swift */; };
+		OBJ_276 /* JobConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* JobConfiguration.swift */; };
+		OBJ_277 /* JobProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* JobProperty.swift */; };
+		OBJ_278 /* MatrixBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* MatrixBuild.swift */; };
+		OBJ_279 /* MatrixProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* MatrixProject.swift */; };
+		OBJ_280 /* MavenModuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* MavenModuleSet.swift */; };
+		OBJ_281 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F8640FEF1EE0A2970041E7E4 /* PBXContainerItemProxy */ = {
+		F8F3EF121F27D61B004429CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_21;
+			remoteGlobalIDString = "Nimble::Nimble";
+			remoteInfo = Nimble;
+		};
+		F8F3EF131F27D61B004429CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Quick::Quick";
+			remoteInfo = Quick;
+		};
+		F8F3EF141F27D61B004429CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Quick::QuickSpecBase";
+			remoteInfo = QuickSpecBase;
+		};
+		F8F3EF151F27D61B004429CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Quick::QuickSpecBase";
+			remoteInfo = QuickSpecBase;
+		};
+		F8F3EF161F27D61B004429CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Butler::Butler";
 			remoteInfo = Butler;
+		};
+		F8F3EF171F27D61B004429CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Butler::ButlerTests";
+			remoteInfo = ButlerTests;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F8F3EF181F27D652004429CF /* Copy JSON */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				F8F3EF191F27D666004429CF /* JSON in Copy JSON */,
+			);
+			name = "Copy JSON";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		03611EB069CAD1C141A91C1D /* Pods_Butler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		49F584ABD337ABF6B01182BB /* Pods-ButlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButlerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ButlerTests/Pods-ButlerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		70F090E363377FE73F56E048 /* Pods-ButlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButlerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ButlerTests/Pods-ButlerTests.release.xcconfig"; sourceTree = "<group>"; };
-		CE6A9B7346F066BE15B21428 /* Pods_ButlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F132AE8D8202A890EFFDA47A /* Pods-Butler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Butler/Pods-Butler.release.xcconfig"; sourceTree = "<group>"; };
-		F7F22CD9E5A82FCEE3586693 /* Pods-Butler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Butler/Pods-Butler.debug.xcconfig"; sourceTree = "<group>"; };
-		OBJ_10 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		OBJ_13 /* ButlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButlerTests.swift; sourceTree = "<group>"; };
-		OBJ_14 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = SOURCE_ROOT; };
-		OBJ_15 /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = SOURCE_ROOT; };
-		OBJ_16 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
-		OBJ_17 /* gradle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gradle; sourceTree = SOURCE_ROOT; };
-		OBJ_19 /* Butler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_20 /* ButlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ButlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Butler::Butler::Product" /* Butler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Butler::ButlerTests::Product" /* ButlerTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Nimble::Nimble::Product" /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* Butler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butler.swift; sourceTree = "<group>"; };
+		OBJ_100 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		OBJ_101 /* Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
+		OBJ_102 /* SourceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLocation.swift; sourceTree = "<group>"; };
+		OBJ_103 /* Stringers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stringers.swift; sourceTree = "<group>"; };
+		OBJ_106 /* QuickSpecBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSpecBase.m; sourceTree = "<group>"; };
+		OBJ_108 /* QuickSpecBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSpecBase.h; sourceTree = "<group>"; };
+		OBJ_109 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/phatblat/dev/jenkins/Butler/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap; sourceTree = "<group>"; };
+		OBJ_11 /* ExternalJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalJob.swift; sourceTree = "<group>"; };
+		OBJ_111 /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
+		OBJ_112 /* Callsite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callsite.swift; sourceTree = "<group>"; };
+		OBJ_114 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		OBJ_115 /* QuickConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_117 /* DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSL.swift; sourceTree = "<group>"; };
+		OBJ_118 /* World+DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "World+DSL.swift"; sourceTree = "<group>"; };
+		OBJ_119 /* ErrorUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorUtility.swift; sourceTree = "<group>"; };
+		OBJ_12 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		OBJ_120 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		OBJ_121 /* ExampleGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGroup.swift; sourceTree = "<group>"; };
+		OBJ_122 /* ExampleMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMetadata.swift; sourceTree = "<group>"; };
+		OBJ_123 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		OBJ_125 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		OBJ_126 /* ExampleHooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHooks.swift; sourceTree = "<group>"; };
+		OBJ_127 /* HooksPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HooksPhase.swift; sourceTree = "<group>"; };
+		OBJ_128 /* SuiteHooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuiteHooks.swift; sourceTree = "<group>"; };
+		OBJ_129 /* NSBundle+CurrentTestBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBundle+CurrentTestBundle.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* FreeStyleBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeStyleBuild.swift; sourceTree = "<group>"; };
+		OBJ_130 /* NSString+C99ExtendedIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+C99ExtendedIdentifier.swift"; sourceTree = "<group>"; };
+		OBJ_131 /* QuickMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMain.swift; sourceTree = "<group>"; };
+		OBJ_132 /* QuickSelectedTestSuiteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSelectedTestSuiteBuilder.swift; sourceTree = "<group>"; };
+		OBJ_133 /* QuickSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSpec.swift; sourceTree = "<group>"; };
+		OBJ_134 /* QuickTestSuite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTestSuite.swift; sourceTree = "<group>"; };
+		OBJ_135 /* URL+FileName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+FileName.swift"; sourceTree = "<group>"; };
+		OBJ_136 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		OBJ_14 /* FreeStyleProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeStyleProject.swift; sourceTree = "<group>"; };
+		OBJ_15 /* HealthReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthReport.swift; sourceTree = "<group>"; };
+		OBJ_16 /* JSONDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDictionary.swift; sourceTree = "<group>"; };
+		OBJ_17 /* JavaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaClass.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Jenkins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jenkins.swift; sourceTree = "<group>"; };
+		OBJ_19 /* JobConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_20 /* JobProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobProperty.swift; sourceTree = "<group>"; };
+		OBJ_21 /* MatrixBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixBuild.swift; sourceTree = "<group>"; };
+		OBJ_22 /* MatrixProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixProject.swift; sourceTree = "<group>"; };
+		OBJ_23 /* MavenModuleSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MavenModuleSet.swift; sourceTree = "<group>"; };
+		OBJ_24 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		OBJ_27 /* ButlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButlerTests.swift; sourceTree = "<group>"; };
+		OBJ_28 /* ExternalJobSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalJobSpec.swift; sourceTree = "<group>"; };
+		OBJ_29 /* FolderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderSpec.swift; sourceTree = "<group>"; };
+		OBJ_30 /* FreeStyleBuildSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeStyleBuildSpec.swift; sourceTree = "<group>"; };
+		OBJ_31 /* FreeStyleProjectSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeStyleProjectSpec.swift; sourceTree = "<group>"; };
+		OBJ_32 /* HealthReportSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthReportSpec.swift; sourceTree = "<group>"; };
+		OBJ_33 /* JobConfigurationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobConfigurationSpec.swift; sourceTree = "<group>"; };
+		OBJ_34 /* JobPropertySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobPropertySpec.swift; sourceTree = "<group>"; };
+		OBJ_35 /* MatrixBuildSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixBuildSpec.swift; sourceTree = "<group>"; };
+		OBJ_36 /* MatrixProjectSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixProjectSpec.swift; sourceTree = "<group>"; };
+		OBJ_37 /* MavenModuleSetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MavenModuleSetSpec.swift; sourceTree = "<group>"; };
+		OBJ_38 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = SOURCE_ROOT; };
+		OBJ_39 /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = SOURCE_ROOT; };
+		OBJ_40 /* Butler.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Butler.xcworkspace; sourceTree = SOURCE_ROOT; };
+		OBJ_41 /* Config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Config; sourceTree = SOURCE_ROOT; };
+		OBJ_42 /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = SOURCE_ROOT; };
+		OBJ_43 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
+		OBJ_44 /* gradle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gradle; sourceTree = SOURCE_ROOT; };
+		OBJ_45 /* JSON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JSON; sourceTree = SOURCE_ROOT; };
+		OBJ_46 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
+		OBJ_51 /* AdapterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterProtocols.swift; sourceTree = "<group>"; };
+		OBJ_52 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionDispatcher.swift; sourceTree = "<group>"; };
+		OBJ_53 /* AssertionRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionRecorder.swift; sourceTree = "<group>"; };
+		OBJ_54 /* NMBExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMBExpectation.swift; sourceTree = "<group>"; };
+		OBJ_55 /* NMBObjCMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMBObjCMatcher.swift; sourceTree = "<group>"; };
+		OBJ_56 /* NimbleEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleEnvironment.swift; sourceTree = "<group>"; };
+		OBJ_57 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleXCTestHandler.swift; sourceTree = "<group>"; };
+		OBJ_59 /* ExceptionCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionCapture.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_8 /* Butler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butler.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Jenkins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jenkins.swift; sourceTree = "<group>"; };
+		OBJ_60 /* DSL+Wait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSL+Wait.swift"; sourceTree = "<group>"; };
+		OBJ_61 /* DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSL.swift; sourceTree = "<group>"; };
+		OBJ_62 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
+		OBJ_63 /* ExpectationMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpectationMessage.swift; sourceTree = "<group>"; };
+		OBJ_64 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		OBJ_65 /* FailureMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureMessage.swift; sourceTree = "<group>"; };
+		OBJ_67 /* AllPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPass.swift; sourceTree = "<group>"; };
+		OBJ_68 /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
+		OBJ_69 /* BeAKindOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeAKindOf.swift; sourceTree = "<group>"; };
+		OBJ_70 /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeAnInstanceOf.swift; sourceTree = "<group>"; };
+		OBJ_71 /* BeCloseTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeCloseTo.swift; sourceTree = "<group>"; };
+		OBJ_72 /* BeEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeEmpty.swift; sourceTree = "<group>"; };
+		OBJ_73 /* BeGreaterThan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeGreaterThan.swift; sourceTree = "<group>"; };
+		OBJ_74 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		OBJ_75 /* BeIdenticalTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeIdenticalTo.swift; sourceTree = "<group>"; };
+		OBJ_76 /* BeLessThan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeLessThan.swift; sourceTree = "<group>"; };
+		OBJ_77 /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeLessThanOrEqual.swift; sourceTree = "<group>"; };
+		OBJ_78 /* BeLogical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeLogical.swift; sourceTree = "<group>"; };
+		OBJ_79 /* BeNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeNil.swift; sourceTree = "<group>"; };
+		OBJ_8 /* Universal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Universal.xcconfig; path = Config/Universal.xcconfig; sourceTree = "<group>"; };
+		OBJ_80 /* BeVoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeVoid.swift; sourceTree = "<group>"; };
+		OBJ_81 /* BeginWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginWith.swift; sourceTree = "<group>"; };
+		OBJ_82 /* Contain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contain.swift; sourceTree = "<group>"; };
+		OBJ_83 /* ContainElementSatisfying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainElementSatisfying.swift; sourceTree = "<group>"; };
+		OBJ_84 /* EndWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndWith.swift; sourceTree = "<group>"; };
+		OBJ_85 /* Equal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equal.swift; sourceTree = "<group>"; };
+		OBJ_86 /* HaveCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveCount.swift; sourceTree = "<group>"; };
+		OBJ_87 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		OBJ_88 /* MatchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchError.swift; sourceTree = "<group>"; };
+		OBJ_89 /* MatcherFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcherFunc.swift; sourceTree = "<group>"; };
+		OBJ_90 /* MatcherProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcherProtocols.swift; sourceTree = "<group>"; };
+		OBJ_91 /* PostNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNotification.swift; sourceTree = "<group>"; };
+		OBJ_92 /* Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predicate.swift; sourceTree = "<group>"; };
+		OBJ_93 /* RaisesException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisesException.swift; sourceTree = "<group>"; };
+		OBJ_94 /* SatisfyAnyOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatisfyAnyOf.swift; sourceTree = "<group>"; };
+		OBJ_95 /* ThrowAssertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowAssertion.swift; sourceTree = "<group>"; };
+		OBJ_96 /* ThrowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowError.swift; sourceTree = "<group>"; };
+		OBJ_97 /* ToSucceed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSucceed.swift; sourceTree = "<group>"; };
+		OBJ_99 /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		"Quick::Quick::Product" /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Quick::QuickSpecBase::Product" /* QuickSpecBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuickSpecBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_29 /* Frameworks */ = {
+		OBJ_159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				667E75F408208DC98C3C2697 /* Pods_Butler.framework in Frameworks */,
+				OBJ_160 /* Nimble.framework in Frameworks */,
+				OBJ_161 /* Quick.framework in Frameworks */,
+				OBJ_162 /* QuickSpecBase.framework in Frameworks */,
+				OBJ_163 /* Butler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_36 /* Frameworks */ = {
+		OBJ_226 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_37 /* Butler.framework in Frameworks */,
-				292992CDB051C1776117A9E5 /* Pods_ButlerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_255 /* QuickSpecBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD2FA3419684A33CA45CB59A /* Frameworks */ = {
+		OBJ_104 /* Quick */ = {
 			isa = PBXGroup;
 			children = (
-				03611EB069CAD1C141A91C1D /* Pods_Butler.framework */,
-				CE6A9B7346F066BE15B21428 /* Pods_ButlerTests.framework */,
+				OBJ_105 /* QuickSpecBase */,
+				OBJ_110 /* Quick */,
 			);
-			name = Frameworks;
+			name = Quick;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_105 /* QuickSpecBase */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_106 /* QuickSpecBase.m */,
+				OBJ_107 /* include */,
+			);
+			name = QuickSpecBase;
+			path = ".build/checkouts/Quick.git--5643266349056256698/Sources/QuickSpecBase";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_107 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_108 /* QuickSpecBase.h */,
+				OBJ_109 /* module.modulemap */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
-		AD340B565221BE4B7FD99619 /* Pods */ = {
+		OBJ_110 /* Quick */ = {
 			isa = PBXGroup;
 			children = (
-				F7F22CD9E5A82FCEE3586693 /* Pods-Butler.debug.xcconfig */,
-				F132AE8D8202A890EFFDA47A /* Pods-Butler.release.xcconfig */,
-				49F584ABD337ABF6B01182BB /* Pods-ButlerTests.debug.xcconfig */,
-				70F090E363377FE73F56E048 /* Pods-ButlerTests.release.xcconfig */,
+				OBJ_111 /* Behavior.swift */,
+				OBJ_112 /* Callsite.swift */,
+				OBJ_113 /* Configuration */,
+				OBJ_116 /* DSL */,
+				OBJ_119 /* ErrorUtility.swift */,
+				OBJ_120 /* Example.swift */,
+				OBJ_121 /* ExampleGroup.swift */,
+				OBJ_122 /* ExampleMetadata.swift */,
+				OBJ_123 /* Filter.swift */,
+				OBJ_124 /* Hooks */,
+				OBJ_129 /* NSBundle+CurrentTestBundle.swift */,
+				OBJ_130 /* NSString+C99ExtendedIdentifier.swift */,
+				OBJ_131 /* QuickMain.swift */,
+				OBJ_132 /* QuickSelectedTestSuiteBuilder.swift */,
+				OBJ_133 /* QuickSpec.swift */,
+				OBJ_134 /* QuickTestSuite.swift */,
+				OBJ_135 /* URL+FileName.swift */,
+				OBJ_136 /* World.swift */,
 			);
-			name = Pods;
+			name = Quick;
+			path = ".build/checkouts/Quick.git--5643266349056256698/Sources/Quick";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_113 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_114 /* Configuration.swift */,
+				OBJ_115 /* QuickConfiguration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
-		OBJ_11 /* Tests */ = {
+		OBJ_116 /* DSL */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* ButlerTests */,
+				OBJ_117 /* DSL.swift */,
+				OBJ_118 /* World+DSL.swift */,
+			);
+			path = DSL;
+			sourceTree = "<group>";
+		};
+		OBJ_124 /* Hooks */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_125 /* Closures.swift */,
+				OBJ_126 /* ExampleHooks.swift */,
+				OBJ_127 /* HooksPhase.swift */,
+				OBJ_128 /* SuiteHooks.swift */,
+			);
+			path = Hooks;
+			sourceTree = "<group>";
+		};
+		OBJ_137 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Butler::ButlerTests::Product" /* ButlerTests.xctest */,
+				"Nimble::Nimble::Product" /* Nimble.framework */,
+				"Quick::Quick::Product" /* Quick.framework */,
+				"Quick::QuickSpecBase::Product" /* QuickSpecBase.framework */,
+				"Butler::Butler::Product" /* Butler.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_25 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_26 /* ButlerTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_12 /* ButlerTests */ = {
+		OBJ_26 /* ButlerTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* ButlerTests.swift */,
+				OBJ_27 /* ButlerTests.swift */,
+				OBJ_28 /* ExternalJobSpec.swift */,
+				OBJ_29 /* FolderSpec.swift */,
+				OBJ_30 /* FreeStyleBuildSpec.swift */,
+				OBJ_31 /* FreeStyleProjectSpec.swift */,
+				OBJ_32 /* HealthReportSpec.swift */,
+				OBJ_33 /* JobConfigurationSpec.swift */,
+				OBJ_34 /* JobPropertySpec.swift */,
+				OBJ_35 /* MatrixBuildSpec.swift */,
+				OBJ_36 /* MatrixProjectSpec.swift */,
+				OBJ_37 /* MavenModuleSetSpec.swift */,
 			);
 			name = ButlerTests;
 			path = Tests/ButlerTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_18 /* Products */ = {
+		OBJ_47 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* Butler.framework */,
-				OBJ_20 /* ButlerTests.xctest */,
+				OBJ_48 /* Nimble */,
+				OBJ_104 /* Quick */,
 			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
+			name = Dependencies;
+			sourceTree = "<group>";
 		};
-		OBJ_5 = {
+		OBJ_48 /* Nimble */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_49 /* Nimble */,
+			);
+			name = Nimble;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_49 /* Nimble */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_50 /* Adapters */,
+				OBJ_60 /* DSL+Wait.swift */,
+				OBJ_61 /* DSL.swift */,
+				OBJ_62 /* Expectation.swift */,
+				OBJ_63 /* ExpectationMessage.swift */,
+				OBJ_64 /* Expression.swift */,
+				OBJ_65 /* FailureMessage.swift */,
+				OBJ_66 /* Matchers */,
+				OBJ_98 /* Utils */,
+			);
+			name = Nimble;
+			path = ".build/checkouts/Nimble.git--6907129570294764061/Sources/Nimble";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_11 /* Tests */,
-				OBJ_14 /* bin */,
-				OBJ_15 /* Docs */,
-				OBJ_16 /* Example */,
-				OBJ_17 /* gradle */,
-				OBJ_18 /* Products */,
-				AD340B565221BE4B7FD99619 /* Pods */,
-				AD2FA3419684A33CA45CB59A /* Frameworks */,
+				OBJ_7 /* Configs */,
+				OBJ_9 /* Sources */,
+				OBJ_25 /* Tests */,
+				OBJ_38 /* bin */,
+				OBJ_39 /* build */,
+				OBJ_40 /* Butler.xcworkspace */,
+				OBJ_41 /* Config */,
+				OBJ_42 /* Docs */,
+				OBJ_43 /* Example */,
+				OBJ_44 /* gradle */,
+				OBJ_45 /* JSON */,
+				OBJ_46 /* Pods */,
+				OBJ_47 /* Dependencies */,
+				OBJ_137 /* Products */,
 			);
+			name = "";
 			sourceTree = "<group>";
 		};
-		OBJ_7 /* Sources */ = {
+		OBJ_50 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* Butler.swift */,
-				OBJ_9 /* Jenkins.swift */,
-				OBJ_10 /* User.swift */,
+				OBJ_51 /* AdapterProtocols.swift */,
+				OBJ_52 /* AssertionDispatcher.swift */,
+				OBJ_53 /* AssertionRecorder.swift */,
+				OBJ_54 /* NMBExpectation.swift */,
+				OBJ_55 /* NMBObjCMatcher.swift */,
+				OBJ_56 /* NimbleEnvironment.swift */,
+				OBJ_57 /* NimbleXCTestHandler.swift */,
+				OBJ_58 /* NonObjectiveC */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		OBJ_58 /* NonObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_59 /* ExceptionCapture.swift */,
+			);
+			path = NonObjectiveC;
+			sourceTree = "<group>";
+		};
+		OBJ_66 /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_67 /* AllPass.swift */,
+				OBJ_68 /* AsyncMatcherWrapper.swift */,
+				OBJ_69 /* BeAKindOf.swift */,
+				OBJ_70 /* BeAnInstanceOf.swift */,
+				OBJ_71 /* BeCloseTo.swift */,
+				OBJ_72 /* BeEmpty.swift */,
+				OBJ_73 /* BeGreaterThan.swift */,
+				OBJ_74 /* BeGreaterThanOrEqualTo.swift */,
+				OBJ_75 /* BeIdenticalTo.swift */,
+				OBJ_76 /* BeLessThan.swift */,
+				OBJ_77 /* BeLessThanOrEqual.swift */,
+				OBJ_78 /* BeLogical.swift */,
+				OBJ_79 /* BeNil.swift */,
+				OBJ_80 /* BeVoid.swift */,
+				OBJ_81 /* BeginWith.swift */,
+				OBJ_82 /* Contain.swift */,
+				OBJ_83 /* ContainElementSatisfying.swift */,
+				OBJ_84 /* EndWith.swift */,
+				OBJ_85 /* Equal.swift */,
+				OBJ_86 /* HaveCount.swift */,
+				OBJ_87 /* Match.swift */,
+				OBJ_88 /* MatchError.swift */,
+				OBJ_89 /* MatcherFunc.swift */,
+				OBJ_90 /* MatcherProtocols.swift */,
+				OBJ_91 /* PostNotification.swift */,
+				OBJ_92 /* Predicate.swift */,
+				OBJ_93 /* RaisesException.swift */,
+				OBJ_94 /* SatisfyAnyOf.swift */,
+				OBJ_95 /* ThrowAssertion.swift */,
+				OBJ_96 /* ThrowError.swift */,
+				OBJ_97 /* ToSucceed.swift */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Universal.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		OBJ_9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* Butler.swift */,
+				OBJ_11 /* ExternalJob.swift */,
+				OBJ_12 /* Folder.swift */,
+				OBJ_13 /* FreeStyleBuild.swift */,
+				OBJ_14 /* FreeStyleProject.swift */,
+				OBJ_15 /* HealthReport.swift */,
+				OBJ_16 /* JSONDictionary.swift */,
+				OBJ_17 /* JavaClass.swift */,
+				OBJ_18 /* Jenkins.swift */,
+				OBJ_19 /* JobConfiguration.swift */,
+				OBJ_20 /* JobProperty.swift */,
+				OBJ_21 /* MatrixBuild.swift */,
+				OBJ_22 /* MatrixProject.swift */,
+				OBJ_23 /* MavenModuleSet.swift */,
+				OBJ_24 /* User.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
+		OBJ_98 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_99 /* Async.swift */,
+				OBJ_100 /* Errors.swift */,
+				OBJ_101 /* Functional.swift */,
+				OBJ_102 /* SourceLocation.swift */,
+				OBJ_103 /* Stringers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_21 /* Butler */ = {
+		"Butler::Butler" /* Butler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_22 /* Build configuration list for PBXNativeTarget "Butler" */;
+			buildConfigurationList = OBJ_263 /* Build configuration list for PBXNativeTarget "Butler" */;
 			buildPhases = (
-				CA5E2AC6A41594E9673F53A7 /* [CP] Check Pods Manifest.lock */,
-				OBJ_25 /* Sources */,
-				OBJ_29 /* Frameworks */,
-				7BD0BD3199B761243D56EBD1 /* [CP] Copy Pods Resources */,
+				OBJ_266 /* Sources */,
+				OBJ_282 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,28 +650,78 @@
 			);
 			name = Butler;
 			productName = Butler;
-			productReference = OBJ_19 /* Butler.framework */;
+			productReference = "Butler::Butler::Product" /* Butler.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_30 /* ButlerTests */ = {
+		"Butler::ButlerTests" /* ButlerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_31 /* Build configuration list for PBXNativeTarget "ButlerTests" */;
+			buildConfigurationList = OBJ_144 /* Build configuration list for PBXNativeTarget "ButlerTests" */;
 			buildPhases = (
-				4645F56C388B55F382C048BE /* [CP] Check Pods Manifest.lock */,
-				OBJ_34 /* Sources */,
-				OBJ_36 /* Frameworks */,
-				4173BE664885ED424B578E85 /* [CP] Embed Pods Frameworks */,
-				76119C6C1744CD26AD5C22B1 /* [CP] Copy Pods Resources */,
+				OBJ_147 /* Sources */,
+				OBJ_159 /* Frameworks */,
+				F8F3EF181F27D652004429CF /* Copy JSON */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_38 /* PBXTargetDependency */,
+				OBJ_164 /* PBXTargetDependency */,
+				OBJ_166 /* PBXTargetDependency */,
+				OBJ_168 /* PBXTargetDependency */,
+				OBJ_170 /* PBXTargetDependency */,
 			);
 			name = ButlerTests;
 			productName = ButlerTests;
-			productReference = OBJ_20 /* ButlerTests.xctest */;
+			productReference = "Butler::ButlerTests::Product" /* ButlerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Nimble::Nimble" /* Nimble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_172 /* Build configuration list for PBXNativeTarget "Nimble" */;
+			buildPhases = (
+				OBJ_175 /* Sources */,
+				OBJ_226 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nimble;
+			productName = Nimble;
+			productReference = "Nimble::Nimble::Product" /* Nimble.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Quick::Quick" /* Quick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_227 /* Build configuration list for PBXNativeTarget "Quick" */;
+			buildPhases = (
+				OBJ_230 /* Sources */,
+				OBJ_254 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_256 /* PBXTargetDependency */,
+			);
+			name = Quick;
+			productName = Quick;
+			productReference = "Quick::Quick::Product" /* Quick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Quick::QuickSpecBase" /* QuickSpecBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_257 /* Build configuration list for PBXNativeTarget "QuickSpecBase" */;
+			buildPhases = (
+				OBJ_260 /* Sources */,
+				OBJ_262 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickSpecBase;
+			productName = QuickSpecBase;
+			productReference = "Quick::QuickSpecBase::Product" /* QuickSpecBase.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -186,7 +729,7 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 9999;
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Butler" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -195,128 +738,394 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_18 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_137 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_21 /* Butler */,
-				OBJ_30 /* ButlerTests */,
+				"Butler::ButlerTests" /* ButlerTests */,
+				"Nimble::Nimble" /* Nimble */,
+				"Quick::Quick" /* Quick */,
+				"Quick::QuickSpecBase" /* QuickSpecBase */,
+				"Butler::Butler" /* Butler */,
+				"Butler::ButlerPackageTests::ProductTarget" /* ButlerPackageTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4173BE664885ED424B578E85 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ButlerTests/Pods-ButlerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4645F56C388B55F382C048BE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		76119C6C1744CD26AD5C22B1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ButlerTests/Pods-ButlerTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BD0BD3199B761243D56EBD1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Butler/Pods-Butler-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CA5E2AC6A41594E9673F53A7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_25 /* Sources */ = {
+		OBJ_147 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_26 /* Butler.swift in Sources */,
-				OBJ_27 /* Jenkins.swift in Sources */,
-				OBJ_28 /* User.swift in Sources */,
+				OBJ_148 /* ButlerTests.swift in Sources */,
+				OBJ_149 /* ExternalJobSpec.swift in Sources */,
+				OBJ_150 /* FolderSpec.swift in Sources */,
+				OBJ_151 /* FreeStyleBuildSpec.swift in Sources */,
+				OBJ_152 /* FreeStyleProjectSpec.swift in Sources */,
+				OBJ_153 /* HealthReportSpec.swift in Sources */,
+				OBJ_154 /* JobConfigurationSpec.swift in Sources */,
+				OBJ_155 /* JobPropertySpec.swift in Sources */,
+				OBJ_156 /* MatrixBuildSpec.swift in Sources */,
+				OBJ_157 /* MatrixProjectSpec.swift in Sources */,
+				OBJ_158 /* MavenModuleSetSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_34 /* Sources */ = {
+		OBJ_175 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_35 /* ButlerTests.swift in Sources */,
+				OBJ_176 /* AdapterProtocols.swift in Sources */,
+				OBJ_177 /* AssertionDispatcher.swift in Sources */,
+				OBJ_178 /* AssertionRecorder.swift in Sources */,
+				OBJ_179 /* NMBExpectation.swift in Sources */,
+				OBJ_180 /* NMBObjCMatcher.swift in Sources */,
+				OBJ_181 /* NimbleEnvironment.swift in Sources */,
+				OBJ_182 /* NimbleXCTestHandler.swift in Sources */,
+				OBJ_183 /* ExceptionCapture.swift in Sources */,
+				OBJ_184 /* DSL+Wait.swift in Sources */,
+				OBJ_185 /* DSL.swift in Sources */,
+				OBJ_186 /* Expectation.swift in Sources */,
+				OBJ_187 /* ExpectationMessage.swift in Sources */,
+				OBJ_188 /* Expression.swift in Sources */,
+				OBJ_189 /* FailureMessage.swift in Sources */,
+				OBJ_190 /* AllPass.swift in Sources */,
+				OBJ_191 /* AsyncMatcherWrapper.swift in Sources */,
+				OBJ_192 /* BeAKindOf.swift in Sources */,
+				OBJ_193 /* BeAnInstanceOf.swift in Sources */,
+				OBJ_194 /* BeCloseTo.swift in Sources */,
+				OBJ_195 /* BeEmpty.swift in Sources */,
+				OBJ_196 /* BeGreaterThan.swift in Sources */,
+				OBJ_197 /* BeGreaterThanOrEqualTo.swift in Sources */,
+				OBJ_198 /* BeIdenticalTo.swift in Sources */,
+				OBJ_199 /* BeLessThan.swift in Sources */,
+				OBJ_200 /* BeLessThanOrEqual.swift in Sources */,
+				OBJ_201 /* BeLogical.swift in Sources */,
+				OBJ_202 /* BeNil.swift in Sources */,
+				OBJ_203 /* BeVoid.swift in Sources */,
+				OBJ_204 /* BeginWith.swift in Sources */,
+				OBJ_205 /* Contain.swift in Sources */,
+				OBJ_206 /* ContainElementSatisfying.swift in Sources */,
+				OBJ_207 /* EndWith.swift in Sources */,
+				OBJ_208 /* Equal.swift in Sources */,
+				OBJ_209 /* HaveCount.swift in Sources */,
+				OBJ_210 /* Match.swift in Sources */,
+				OBJ_211 /* MatchError.swift in Sources */,
+				OBJ_212 /* MatcherFunc.swift in Sources */,
+				OBJ_213 /* MatcherProtocols.swift in Sources */,
+				OBJ_214 /* PostNotification.swift in Sources */,
+				OBJ_215 /* Predicate.swift in Sources */,
+				OBJ_216 /* RaisesException.swift in Sources */,
+				OBJ_217 /* SatisfyAnyOf.swift in Sources */,
+				OBJ_218 /* ThrowAssertion.swift in Sources */,
+				OBJ_219 /* ThrowError.swift in Sources */,
+				OBJ_220 /* ToSucceed.swift in Sources */,
+				OBJ_221 /* Async.swift in Sources */,
+				OBJ_222 /* Errors.swift in Sources */,
+				OBJ_223 /* Functional.swift in Sources */,
+				OBJ_224 /* SourceLocation.swift in Sources */,
+				OBJ_225 /* Stringers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_231 /* Behavior.swift in Sources */,
+				OBJ_232 /* Callsite.swift in Sources */,
+				OBJ_233 /* Configuration.swift in Sources */,
+				OBJ_234 /* QuickConfiguration.swift in Sources */,
+				OBJ_235 /* DSL.swift in Sources */,
+				OBJ_236 /* World+DSL.swift in Sources */,
+				OBJ_237 /* ErrorUtility.swift in Sources */,
+				OBJ_238 /* Example.swift in Sources */,
+				OBJ_239 /* ExampleGroup.swift in Sources */,
+				OBJ_240 /* ExampleMetadata.swift in Sources */,
+				OBJ_241 /* Filter.swift in Sources */,
+				OBJ_242 /* Closures.swift in Sources */,
+				OBJ_243 /* ExampleHooks.swift in Sources */,
+				OBJ_244 /* HooksPhase.swift in Sources */,
+				OBJ_245 /* SuiteHooks.swift in Sources */,
+				OBJ_246 /* NSBundle+CurrentTestBundle.swift in Sources */,
+				OBJ_247 /* NSString+C99ExtendedIdentifier.swift in Sources */,
+				OBJ_248 /* QuickMain.swift in Sources */,
+				OBJ_249 /* QuickSelectedTestSuiteBuilder.swift in Sources */,
+				OBJ_250 /* QuickSpec.swift in Sources */,
+				OBJ_251 /* QuickTestSuite.swift in Sources */,
+				OBJ_252 /* URL+FileName.swift in Sources */,
+				OBJ_253 /* World.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_261 /* QuickSpecBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_267 /* Butler.swift in Sources */,
+				OBJ_268 /* ExternalJob.swift in Sources */,
+				OBJ_269 /* Folder.swift in Sources */,
+				OBJ_270 /* FreeStyleBuild.swift in Sources */,
+				OBJ_271 /* FreeStyleProject.swift in Sources */,
+				OBJ_272 /* HealthReport.swift in Sources */,
+				OBJ_273 /* JSONDictionary.swift in Sources */,
+				OBJ_274 /* JavaClass.swift in Sources */,
+				OBJ_275 /* Jenkins.swift in Sources */,
+				OBJ_276 /* JobConfiguration.swift in Sources */,
+				OBJ_277 /* JobProperty.swift in Sources */,
+				OBJ_278 /* MatrixBuild.swift in Sources */,
+				OBJ_279 /* MatrixProject.swift in Sources */,
+				OBJ_280 /* MavenModuleSet.swift in Sources */,
+				OBJ_281 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_38 /* PBXTargetDependency */ = {
+		OBJ_164 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_21 /* Butler */;
-			targetProxy = F8640FEF1EE0A2970041E7E4 /* PBXContainerItemProxy */;
+			target = "Nimble::Nimble" /* Nimble */;
+			targetProxy = F8F3EF121F27D61B004429CF /* PBXContainerItemProxy */;
+		};
+		OBJ_166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Quick::Quick" /* Quick */;
+			targetProxy = F8F3EF131F27D61B004429CF /* PBXContainerItemProxy */;
+		};
+		OBJ_168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Quick::QuickSpecBase" /* QuickSpecBase */;
+			targetProxy = F8F3EF151F27D61B004429CF /* PBXContainerItemProxy */;
+		};
+		OBJ_170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Butler::Butler" /* Butler */;
+			targetProxy = F8F3EF161F27D61B004429CF /* PBXContainerItemProxy */;
+		};
+		OBJ_256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Quick::QuickSpecBase" /* QuickSpecBase */;
+			targetProxy = F8F3EF141F27D61B004429CF /* PBXContainerItemProxy */;
+		};
+		OBJ_287 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Butler::ButlerTests" /* ButlerTests */;
+			targetProxy = F8F3EF171F27D61B004429CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_23 /* Debug */ = {
+		OBJ_145 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7F22CD9E5A82FCEE3586693 /* Pods-Butler.debug.xcconfig */;
+			baseConfigurationReference = OBJ_8 /* Universal.xcconfig */;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Quick.git--5643266349056256698/Sources/QuickSpecBase/include",
+					"$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase",
+				);
+				INFOPLIST_FILE = Butler.xcodeproj/ButlerTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ButlerTests;
+			};
+			name = Debug;
+		};
+		OBJ_146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = OBJ_8 /* Universal.xcconfig */;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Quick.git--5643266349056256698/Sources/QuickSpecBase/include",
+					"$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase",
+				);
+				INFOPLIST_FILE = Butler.xcodeproj/ButlerTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ButlerTests;
+			};
+			name = Release;
+		};
+		OBJ_173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = OBJ_8 /* Universal.xcconfig */;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Butler.xcodeproj/Nimble_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Nimble;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Nimble;
+			};
+			name = Debug;
+		};
+		OBJ_174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = OBJ_8 /* Universal.xcconfig */;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Butler.xcodeproj/Nimble_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Nimble;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Nimble;
+			};
+			name = Release;
+		};
+		OBJ_228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = OBJ_8 /* Universal.xcconfig */;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Quick.git--5643266349056256698/Sources/QuickSpecBase/include",
+					"$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase",
+				);
+				INFOPLIST_FILE = Butler.xcodeproj/Quick_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Quick;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Quick;
+			};
+			name = Debug;
+		};
+		OBJ_229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = OBJ_8 /* Universal.xcconfig */;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Quick.git--5643266349056256698/Sources/QuickSpecBase/include",
+					"$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase",
+				);
+				INFOPLIST_FILE = Butler.xcodeproj/Quick_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Butler.xcodeproj/GeneratedModuleMap/QuickSpecBase/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Quick;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Quick;
+			};
+			name = Release;
+		};
+		OBJ_258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = OBJ_8 /* Universal.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Quick.git--5643266349056256698/Sources/QuickSpecBase/include",
+				);
+				INFOPLIST_FILE = Butler.xcodeproj/QuickSpecBase_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = QuickSpecBase;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = QuickSpecBase;
+			};
+			name = Debug;
+		};
+		OBJ_259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = OBJ_8 /* Universal.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Quick.git--5643266349056256698/Sources/QuickSpecBase/include",
+				);
+				INFOPLIST_FILE = Butler.xcodeproj/QuickSpecBase_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = QuickSpecBase;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = QuickSpecBase;
+			};
+			name = Release;
+		};
+		OBJ_264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = OBJ_8 /* Universal.xcconfig */;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -325,19 +1134,21 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Butler.xcodeproj/Butler_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Butler;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = Butler;
 			};
 			name = Debug;
 		};
-		OBJ_24 /* Release */ = {
+		OBJ_265 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F132AE8D8202A890EFFDA47A /* Pods-Butler.release.xcconfig */;
+			baseConfigurationReference = OBJ_8 /* Universal.xcconfig */;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -346,13 +1157,27 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Butler.xcodeproj/Butler_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Butler;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = Butler;
+			};
+			name = Release;
+		};
+		OBJ_285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 			};
 			name = Release;
 		};
@@ -360,118 +1185,73 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				USE_HEADERMAP = NO;
-				VALID_ARCHS = "i386 x86_64 armv7s armv7 arm64";
 			};
 			name = Debug;
-		};
-		OBJ_32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49F584ABD337ABF6B01182BB /* Pods-ButlerTests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Butler.xcodeproj/ButlerTests_Info.plist;
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = ButlerTests;
-			};
-			name = Debug;
-		};
-		OBJ_33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70F090E363377FE73F56E048 /* Pods-ButlerTests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Butler.xcodeproj/ButlerTests_Info.plist;
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = ButlerTests;
-			};
-			name = Release;
 		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				USE_HEADERMAP = NO;
-				VALID_ARCHS = "i386 x86_64 armv7s armv7 arm64";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		OBJ_144 /* Build configuration list for PBXNativeTarget "ButlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_145 /* Debug */,
+				OBJ_146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_172 /* Build configuration list for PBXNativeTarget "Nimble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_173 /* Debug */,
+				OBJ_174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "Butler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -481,20 +1261,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_22 /* Build configuration list for PBXNativeTarget "Butler" */ = {
+		OBJ_227 /* Build configuration list for PBXNativeTarget "Quick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_23 /* Debug */,
-				OBJ_24 /* Release */,
+				OBJ_228 /* Debug */,
+				OBJ_229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_31 /* Build configuration list for PBXNativeTarget "ButlerTests" */ = {
+		OBJ_257 /* Build configuration list for PBXNativeTarget "QuickSpecBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_32 /* Debug */,
-				OBJ_33 /* Release */,
+				OBJ_258 /* Debug */,
+				OBJ_259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_263 /* Build configuration list for PBXNativeTarget "Butler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_264 /* Debug */,
+				OBJ_265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_284 /* Build configuration list for PBXAggregateTarget "ButlerPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_285 /* Debug */,
+				OBJ_286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

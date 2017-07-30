@@ -1,0 +1,6 @@
+{
+    "description": "Build stability: No recent builds failed.",
+    "iconClassName": "icon-health-80plus",
+    "iconUrl": "health-80plus.png",
+    "score": 100
+}
