@@ -80,13 +80,21 @@ task podLibLint(type: Exec) {
 task xcodeGenerate(type: Exec) {
     description '(Re)generates the Xcode project based on the Swift package definition.'
     group taskGroup
-    description 'Generates an Xcode project'
+
     String command = xcodePath +
                 'swift package' +
                 ' -Xlinker -framework -Xlinker XCTest' +
                 ' generate-xcodeproj' +
                 ' --xcconfig-overrides Config/Universal.xcconfig'
     commandLine command.tokenize()
+}
+
+task formatPlistFiles(type: Exec) {
+    description 'Formats plist files.'
+    group taskGroup
+    mustRunAfter xcodeGenerate
+
+    commandLine 'bash', '-c', 'plutil -convert xml1 *.xcodeproj/*.plist'
 }
 
 task spmClean(type: Exec) {
@@ -163,15 +171,15 @@ task swiftTest(type: Exec) {
 task xcode {
     description 'Builds and runs tests using xcodebuild.'
     group taskGroup
+
+    Task xcodebuild = tasks.getByName('xcodebuild')
     tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
-    tasks.getByName('xcodebuild').dependsOn spmFetchDependencies
+    xcodebuild.dependsOn spmFetchDependencies
     dependsOn xcodeVersion
     dependsOn xcodeGenerate
-    dependsOn 'build'
-    dependsOn 'test'
+    dependsOn formatPlistFiles
 
-    'build'.mustRunAfter xcodeGenerate
-    'test'.mustRunAfter 'build'
+    xcodebuild.mustRunAfter xcodeGenerate
 }
 
 task cocoapods {
@@ -191,6 +199,7 @@ task spm {
     dependsOn spmFetchDependencies
     dependsOn spmUpdate
     dependsOn xcodeGenerate
+    dependsOn formatPlistFiles
     dependsOn swiftBuild
     swiftBuild.mustRunAfter xcodeGenerate
     // TEMP: SPM disabled due to issues with Quick tests
