@@ -243,7 +243,7 @@ task spm {
     dependsOn formatPlistFiles
     dependsOn swiftBuild
     swiftBuild.mustRunAfter xcodeGenerate
-    // TEMP: SPM disabled due to issues with Quick tests
+    // TEMP: Tests disabled due to no way to include required resources
     //dependsOn swiftTest
 }
 
@@ -257,6 +257,8 @@ task xcode {
     dependsOn xcodeVersion
     dependsOn xcodeGenerate
     dependsOn formatPlistFiles
+    // TEMP: Tests disabled due to no way to include required resources
+    //dependsOn xcodetest
     dependsOn archiveFramework
 
     xcodebuild.dependsOn xcodeGenerate
