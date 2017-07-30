@@ -22,7 +22,7 @@ ext {
         verbose = false
     }
 
-    xcodePath = 'env DEVELOPER_DIR=/Applications/Xcode-9.app '
+    xcodePath = 'env DEVELOPER_DIR=/Applications/Xcode-9beta4.app '
 }
 
 if (System.env.JENKINS_URL) {
