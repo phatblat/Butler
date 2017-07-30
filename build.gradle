@@ -166,8 +166,12 @@ task xcode {
     tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
     tasks.getByName('xcodebuild').dependsOn spmFetchDependencies
     dependsOn xcodeVersion
+    dependsOn xcodeGenerate
     dependsOn 'build'
     dependsOn 'test'
+
+    'build'.mustRunAfter xcodeGenerate
+    'test'.mustRunAfter 'build'
 }
 
 task cocoapods {
