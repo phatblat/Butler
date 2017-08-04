@@ -37,7 +37,7 @@ node {
         sh './gradlew spmDescribe'
     }
     stage('Build') {
-        sh './gradlew xcodebuild'
+        sh './gradlew xcodebuild -x cocoapodsInstall'
         sh './gradlew swiftBuild'
     }
     stage('Test') {
