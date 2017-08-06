@@ -73,6 +73,15 @@ task xcodeVersion(type: Exec) {
     commandLine command.tokenize()
 }
 
+task archiveFramework(type: Zip) {
+    description 'Zips a copy of the built framework.'
+    group taskGroup
+
+    from 'build/sym/Debug/Butler.framework/'
+    archiveName 'Butler.framework.zip'
+    destinationDir(project.buildDir)
+}
+
 /* -------------------------------------------------------------------------- */
 // Bundler
 /* -------------------------------------------------------------------------- */
@@ -234,7 +243,7 @@ task spm {
     dependsOn formatPlistFiles
     dependsOn swiftBuild
     swiftBuild.mustRunAfter xcodeGenerate
-    // TEMP: SPM disabled due to issues with Quick tests
+    // TEMP: Tests disabled due to no way to include required resources
     //dependsOn swiftTest
 }
 
@@ -243,13 +252,21 @@ task xcode {
     group taskGroup
 
     Task xcodebuild = tasks.getByName('xcodebuild')
-    tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
     xcodebuild.dependsOn spmFetchDependencies
+
+    Task cocoapodsInstall = tasks.getByName('cocoapodsInstall')
+    cocoapodsInstall.dependsOn bundleInstall
+    cocoapodsInstall.podCommand = './bin/pod'
+
     dependsOn xcodeVersion
     dependsOn xcodeGenerate
     dependsOn formatPlistFiles
+    // TEMP: Tests disabled due to no way to include required resources
+    //dependsOn xcodetest
+    dependsOn archiveFramework
 
-    xcodebuild.mustRunAfter xcodeGenerate
+    xcodebuild.dependsOn xcodeGenerate
+    archiveFramework.dependsOn xcodebuild
 }
 
 task buildAll {
