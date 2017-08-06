@@ -189,9 +189,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		"Butler::Butler::Product" /* Butler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Butler::Butler::Product" /* Butler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Butler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Butler::ButlerTests::Product" /* ButlerTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Nimble::Nimble::Product" /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Nimble::Nimble::Product" /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Butler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butler.swift; sourceTree = "<group>"; };
 		OBJ_100 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		OBJ_101 /* Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
@@ -256,7 +256,6 @@
 		OBJ_43 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
 		OBJ_44 /* gradle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gradle; sourceTree = SOURCE_ROOT; };
 		OBJ_45 /* JSON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JSON; sourceTree = SOURCE_ROOT; };
-		OBJ_46 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
 		OBJ_51 /* AdapterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterProtocols.swift; sourceTree = "<group>"; };
 		OBJ_52 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionDispatcher.swift; sourceTree = "<group>"; };
 		OBJ_53 /* AssertionRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionRecorder.swift; sourceTree = "<group>"; };
@@ -305,8 +304,8 @@
 		OBJ_96 /* ThrowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowError.swift; sourceTree = "<group>"; };
 		OBJ_97 /* ToSucceed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSucceed.swift; sourceTree = "<group>"; };
 		OBJ_99 /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
-		"Quick::Quick::Product" /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Quick::QuickSpecBase::Product" /* QuickSpecBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuickSpecBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Quick::Quick::Product" /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Quick::QuickSpecBase::Product" /* QuickSpecBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuickSpecBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -509,7 +508,7 @@
 			path = ".build/checkouts/Nimble.git--6907129570294764061/Sources/Nimble";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -524,11 +523,9 @@
 				OBJ_43 /* Example */,
 				OBJ_44 /* gradle */,
 				OBJ_45 /* JSON */,
-				OBJ_46 /* Pods */,
 				OBJ_47 /* Dependencies */,
 				OBJ_137 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_50 /* Adapters */ = {
@@ -738,7 +735,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_137 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
