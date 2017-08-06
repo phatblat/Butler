@@ -252,8 +252,12 @@ task xcode {
     group taskGroup
 
     Task xcodebuild = tasks.getByName('xcodebuild')
-    tasks.getByName('cocoapodsInstall').dependsOn bundleInstall
     xcodebuild.dependsOn spmFetchDependencies
+
+    Task cocoapodsInstall = tasks.getByName('cocoapodsInstall')
+    cocoapodsInstall.dependsOn bundleInstall
+    cocoapodsInstall.podCommand = './bin/pod'
+
     dependsOn xcodeVersion
     dependsOn xcodeGenerate
     dependsOn formatPlistFiles
