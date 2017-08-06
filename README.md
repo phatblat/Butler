@@ -1,6 +1,9 @@
 # Butler
 
 [![Build Status](http://jenkins.log-g.co/buildStatus/icon?job=Butler)](http://jenkins.log-g.co/job/Butler/)
+[![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)](https://swift.org/)
+
+
 
 Swift bindings for the Jenkins
 [remote access API](https://wiki.jenkins-ci.org/display/JENKINS/Remote+access+API).
