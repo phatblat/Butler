@@ -1,3 +1,4 @@
+ENABLE_BITCODE = NO
 SDKROOT = macosx
 SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator
 SWIFT_VERSION = 4.0
