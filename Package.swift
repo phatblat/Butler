@@ -46,5 +46,5 @@ let package = Package(
 // https://github.com/apple/swift-package-manager/blob/master/Documentation/PackageDescriptionV4.md#version
 let version = Version(
     0, 1, 0,
-    prereleaseIdentifiers: [], buildMetadataIdentifier: []
+    prereleaseIdentifiers: [], buildMetadataIdentifiers: []
 )
