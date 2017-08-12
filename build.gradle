@@ -7,7 +7,7 @@
 // Properties
 /* -------------------------------------------------------------------------- */
 
-String taskGroup = 'zzz Butler'
+String taskGroup = 'Butler'
 
 ext {
     if (project.hasProperty('verbose')) {
