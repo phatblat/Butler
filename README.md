@@ -48,7 +48,7 @@ dependency like in the following example:
 let package = Package(
     name: "YourPackage",
     dependencies: [
-        .Package(url: "https://github.com/phatblat/Butler.git")
+        .package(url: "https://github.com/phatblat/Butler.git")
     ],
 )
 ```
