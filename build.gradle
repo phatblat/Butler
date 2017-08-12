@@ -7,7 +7,7 @@
 // Properties
 /* -------------------------------------------------------------------------- */
 
-String taskGroup = 'zzz Butler'
+String taskGroup = 'Butler'
 
 ext {
     if (project.hasProperty('verbose')) {
@@ -45,7 +45,7 @@ buildscript {
 task removeBatchFile(type: Delete) { delete 'gradlew.bat' }
 
 wrapper {
-    gradleVersion = '4.0.2'
+    gradleVersion = '4.1'
     distributionType = 'ALL'
     finalizedBy removeBatchFile
 }
