@@ -16,10 +16,12 @@ let package = Package(
         .package(url: "git@github.com:Quick/Quick.git",
             .branch("xcode-9-fix")),
             //from: "1.1.0"),
+        // Local source
         // .package(url: "\(containingFolder)/Quick", .branch("master")),
         .package(url: "git@github.com:Quick/Nimble.git",
             .branch("master")),
             // from: "7.0.1"),
+        // Local source
         // .package(url: "\(containingFolder)/Nimble", .branch("xcode9-beta")),
     ],
     targets: [
@@ -41,31 +43,8 @@ let package = Package(
     swiftLanguageVersions: [4]
 )
 
-let version = Version(0, 1, 0)
-
-// package.exclude = [
-//     "Butler.podspec",
-//     "Butler.xcodeproj/",
-//     "Butler.xcworkspace/",
-//     "Docs/",
-//     "Example/",
-//     "Gemfile",
-//     "Gemfile.lock",
-//     "LICENSE",
-//     "Package.pins",
-//     "Package.swift",
-//     "Podfile",
-//     "Podfile.lock",
-//     "Pods/",
-//     "README.md",
-//     "bin/",
-//     "build.gradle",
-//     "gradle/",
-//     "gradlew",
-// ]
-
-// testDependencies temporarily removed
-// https://stackoverflow.com/questions/41401753/test-only-dependencies-when-using-the-swift-package-manager#answer-41407032
-// package.testDependencies = [
-//     .Package(url: "https://github.com/Quick/Quick.git", majorVersion: 1)
-// ]
+// https://github.com/apple/swift-package-manager/blob/master/Documentation/PackageDescriptionV4.md#version
+let version = Version(
+    0, 1, 0,
+    prereleaseIdentifiers: [], buildMetadataIdentifier: []
+)
