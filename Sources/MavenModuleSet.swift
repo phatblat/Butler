@@ -40,4 +40,3 @@ struct MavenModuleSet: Codable {
     let upstreamProjects: [String]
     let url: URL
 }
-
