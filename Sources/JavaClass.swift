@@ -24,4 +24,5 @@ enum JavaClass: String, Codable {
     case organizationFolderEmptyView = "jenkins.branch.OrganizationFolderEmptyView"
     case organizationFolderViewHolderViewImpl = "jenkins.branch.OrganizationFolderViewHolder$ViewImpl"
     case viewCredentialsAction = "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    case workflowJob = "org.jenkinsci.plugins.workflow.job.WorkflowJob"
 }
